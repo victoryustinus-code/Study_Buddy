@@ -2,8 +2,11 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Logo from '../components/Logo';
+import { useAdmin } from '../context/AdminContext';
 
 export default function HomePage() {
+  const { content } = useAdmin();
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -17,13 +20,13 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 relative">
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-              <span className="text-sm font-medium">🎓 Where Learning Meets Technology</span>
+              <span className="text-sm font-medium">{content.heroBadge}</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-              Upgrade Program Sekolah Anda dengan <span className="text-yellow-300">Platform Belajar Digital</span> Bertaraf Internasional
+              {content.heroTitle}
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Study Buddy membantu sekolah dan lembaga kursus menyediakan LMS dengan rapor & ijazah internasional — hemat hingga <strong className="text-yellow-300">80% biaya</strong> dibanding sekolah internasional.
+              {content.heroSubtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="#produk" className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-300 transition shadow-lg">
@@ -79,8 +82,8 @@ export default function HomePage() {
                   <span className="bg-white/20 rounded-full px-3 py-1 text-xs font-medium">PAUD - SMP Kelas 8</span>
                   <Logo brand="schoolio" size="small" />
                 </div>
-                <h3 className="text-2xl font-bold">Schoolio</h3>
-                <p className="text-green-100 text-sm mt-2">Kurikulum lengkap untuk homeschool & sekolah</p>
+                <h3 className="text-2xl font-bold">{content.products.schoolio.name}</h3>
+                <p className="text-green-100 text-sm mt-2">{content.products.schoolio.description}</p>
               </div>
               <div className="p-6">
                 <ul className="space-y-3 mb-6">
@@ -107,7 +110,7 @@ export default function HomePage() {
                 </ul>
                 <div className="border-t pt-4 mb-4">
                   <p className="text-sm text-gray-500">Harga</p>
-                  <p className="text-2xl font-bold text-gray-900">IDR 655.200<span className="text-sm font-normal text-gray-500">/bulan/siswa</span></p>
+                  <p className="text-2xl font-bold text-gray-900">{content.products.schoolio.price}<span className="text-sm font-normal text-gray-500">{content.products.schoolio.priceUnit}</span></p>
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                   <Link to="/schoolio/family" className="bg-green-50 text-green-700 px-3 py-2 rounded-lg text-sm font-medium text-center hover:bg-green-100 transition">
@@ -127,8 +130,8 @@ export default function HomePage() {
                   <span className="bg-white/20 rounded-full px-3 py-1 text-xs font-medium">SD - SMP Kelas 8</span>
                   <Logo brand="mobymax" size="small" />
                 </div>
-                <h3 className="text-2xl font-bold">MobyMax</h3>
-                <p className="text-blue-100 text-sm mt-2">Persiapan akademik bertaraf internasional</p>
+                <h3 className="text-2xl font-bold">{content.products.mobymax.name}</h3>
+                <p className="text-blue-100 text-sm mt-2">{content.products.mobymax.description}</p>
               </div>
               <div className="p-6">
                 <ul className="space-y-3 mb-6">
@@ -155,7 +158,7 @@ export default function HomePage() {
                 </ul>
                 <div className="border-t pt-4 mb-4">
                   <p className="text-sm text-gray-500">Harga</p>
-                  <p className="text-2xl font-bold text-gray-900">IDR 655.200<span className="text-sm font-normal text-gray-500">/bulan/siswa</span></p>
+                  <p className="text-2xl font-bold text-gray-900">{content.products.mobymax.price}<span className="text-sm font-normal text-gray-500">{content.products.mobymax.priceUnit}</span></p>
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                   <Link to="/mobymax/family" className="bg-blue-50 text-blue-700 px-3 py-2 rounded-lg text-sm font-medium text-center hover:bg-blue-100 transition">
@@ -175,8 +178,8 @@ export default function HomePage() {
                   <span className="bg-white/20 rounded-full px-3 py-1 text-xs font-medium">Kelas 9 - 12 (SMA)</span>
                   <Logo brand="ged" size="small" />
                 </div>
-                <h3 className="text-2xl font-bold">GED</h3>
-                <p className="text-orange-100 text-sm mt-2">Ijazah SMA setara yang diterima kampus dunia</p>
+                <h3 className="text-2xl font-bold">{content.products.ged.name}</h3>
+                <p className="text-orange-100 text-sm mt-2">{content.products.ged.description}</p>
               </div>
               <div className="p-6">
                 <ul className="space-y-3 mb-6">
@@ -203,7 +206,7 @@ export default function HomePage() {
                 </ul>
                 <div className="border-t pt-4 mb-4">
                   <p className="text-sm text-gray-500">Harga</p>
-                  <p className="text-2xl font-bold text-gray-900">IDR 1.159.200<span className="text-sm font-normal text-gray-500">/bulan/siswa</span></p>
+                  <p className="text-2xl font-bold text-gray-900">{content.products.ged.price}<span className="text-sm font-normal text-gray-500">{content.products.ged.priceUnit}</span></p>
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                   <Link to="/ged/family" className="bg-orange-50 text-orange-700 px-3 py-2 rounded-lg text-sm font-medium text-center hover:bg-orange-100 transition">
@@ -425,10 +428,10 @@ export default function HomePage() {
             Hubungi kami untuk konsultasi gratis dan temukan platform yang tepat untuk kebutuhan sekolah atau lembaga Anda.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="mailto:studybuddyindonesia1@gmail.com" className="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition">
+            <a href={`mailto:${content.email}`} className="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition">
               📧 Email Kami
             </a>
-            <a href="https://wa.me/62881037380330" target="_blank" rel="noopener noreferrer" className="bg-green-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-700 transition">
+            <a href={`https://wa.me/${content.whatsapp}`} target="_blank" rel="noopener noreferrer" className="bg-green-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-700 transition">
               💬 WhatsApp
             </a>
           </div>

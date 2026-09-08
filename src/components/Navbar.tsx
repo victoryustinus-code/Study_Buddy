@@ -1,10 +1,12 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import Logo from './Logo';
+import { useAdmin } from '../context/AdminContext';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { content } = useAdmin();
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -16,8 +18,8 @@ export default function Navbar() {
             <Link to="/" className="flex items-center space-x-2">
               <Logo brand="studybuddy" size="medium" />
               <div className="flex flex-col">
-                <span className="text-xl font-bold text-gray-800">Study Buddy</span>
-                <span className="text-xs text-gray-500 -mt-1 hidden sm:block">where learning meets technology</span>
+                <span className="text-xl font-bold text-gray-800">{content.brandName}</span>
+                <span className="text-xs text-gray-500 -mt-1 hidden sm:block">{content.tagline}</span>
               </div>
             </Link>
           </div>

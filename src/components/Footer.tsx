@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
+import { useAdmin } from '../context/AdminContext';
 
 export default function Footer() {
+  const { content } = useAdmin();
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -11,8 +14,8 @@ export default function Footer() {
             <div className="flex items-center space-x-2 mb-4">
               <Logo brand="studybuddy" size="medium" />
               <div className="flex flex-col">
-                <span className="text-xl font-bold">Study Buddy</span>
-                <span className="text-xs text-gray-400 -mt-1">where learning meets technology</span>
+                <span className="text-xl font-bold">{content.brandName}</span>
+                <span className="text-xs text-gray-400 -mt-1">{content.tagline}</span>
               </div>
             </div>
             <p className="text-gray-400 text-sm">
@@ -47,22 +50,22 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-400">
               <li className="flex items-start space-x-2">
                 <span>📧</span>
-                <a href="mailto:studybuddyindonesia1@gmail.com" className="hover:text-white transition">studybuddyindonesia1@gmail.com</a>
+                <a href={`mailto:${content.email}`} className="hover:text-white transition">{content.email}</a>
               </li>
               <li className="flex items-start space-x-2">
                 <span>💬</span>
-                <a href="https://wa.me/62881037380330" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">+62 881-0373-80330</a>
+                <a href={`https://wa.me/${content.whatsapp}`} target="_blank" rel="noopener noreferrer" className="hover:text-white transition">+{content.whatsapp}</a>
               </li>
               <li className="flex items-start space-x-2">
                 <span>📍</span>
-                <span>Jl. Nuasa Utama Raya No. 257, Jimbaran, Kuta Selatan - Badung</span>
+                <span>{content.address}</span>
               </li>
             </ul>
             <div className="flex space-x-3 mt-4">
-              <a href="https://wa.me/62881037380330" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-green-600 transition">
+              <a href={`https://wa.me/${content.whatsapp}`} target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-green-600 transition">
                 <span className="text-sm">💬</span>
               </a>
-              <a href="mailto:studybuddyindonesia1@gmail.com" className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition">
+              <a href={`mailto:${content.email}`} className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition">
                 <span className="text-sm">📧</span>
               </a>
             </div>
@@ -71,6 +74,11 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-500">
           <p>© 2025 Study Buddy. Semua hak dilindungi. | Mitra resmi Schoolio, MobyMax, dan GED untuk Indonesia.</p>
+          <p className="mt-2">
+            <Link to="/admin" className="text-gray-600 hover:text-gray-400 transition text-xs">
+              Admin Panel
+            </Link>
+          </p>
         </div>
       </div>
     </footer>
