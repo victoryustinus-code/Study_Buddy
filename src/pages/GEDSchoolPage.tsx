@@ -27,8 +27,8 @@ export default function GEDSchoolPage() {
               <a href="mailto:info@studybuddy.id" className="bg-yellow-400 text-gray-900 px-6 py-3 rounded-xl font-bold hover:bg-yellow-300 transition">
                 Jadi Mitra →
               </a>
-              <a href="https://www.ged.com" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-6 py-3 rounded-xl font-bold hover:bg-white hover:text-orange-700 transition">
-                Kunjungi GED.com
+              <a href="https://www.essentialed.com/educators/ged-academy" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-6 py-3 rounded-xl font-bold hover:bg-white hover:text-orange-700 transition">
+                Kunjungi GED Academy
               </a>
             </div>
           </div>

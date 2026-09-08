@@ -24,11 +24,11 @@ export default function GEDFamilyPage() {
               Ijazah setara SMA yang diterima di 98% universitas dan perusahaan di seluruh dunia. Persiapan tes internasional untuk kelas 9-12.
             </p>
             <div className="flex flex-wrap gap-3">
-              <a href="https://app.ged.com/signup" target="_blank" rel="noopener noreferrer" className="bg-yellow-400 text-gray-900 px-6 py-3 rounded-xl font-bold hover:bg-yellow-300 transition">
-                Daftar Akun Gratis →
+              <a href="https://www.essentialed.com/educators/ged-academy" target="_blank" rel="noopener noreferrer" className="bg-yellow-400 text-gray-900 px-6 py-3 rounded-xl font-bold hover:bg-yellow-300 transition">
+                Daftar Sekarang →
               </a>
-              <a href="https://www.ged.com" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-6 py-3 rounded-xl font-bold hover:bg-white hover:text-orange-700 transition">
-                Kunjungi GED.com
+              <a href="https://www.essentialed.com/educators/ged-academy" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-6 py-3 rounded-xl font-bold hover:bg-white hover:text-orange-700 transition">
+                Kunjungi GED Academy
               </a>
             </div>
           </div>
@@ -195,8 +195,8 @@ export default function GEDFamilyPage() {
           <h2 className="text-3xl font-bold mb-4">Raih Ijazah Setara SMA yang Diakui Dunia</h2>
           <p className="text-orange-100 text-lg mb-6">Buka pintu ke universitas dan karir global dengan GED. Mulai persiapan Anda hari ini!</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://app.ged.com/signup" target="_blank" rel="noopener noreferrer" className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-300 transition">
-              Daftar Akun Gratis →
+            <a href="https://www.essentialed.com/educators/ged-academy" target="_blank" rel="noopener noreferrer" className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-300 transition">
+              Daftar Sekarang →
             </a>
             <Link to="/ged/school" className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-orange-700 transition">
               Lihat Versi Sekolah →
