@@ -105,8 +105,8 @@ export default function HomePage() {
                   </li>
                 </ul>
                 <div className="border-t pt-4 mb-4">
-                  <p className="text-sm text-gray-500">Mulai dari</p>
-                  <p className="text-2xl font-bold text-gray-900">$29.99<span className="text-sm font-normal text-gray-500">/bulan/siswa</span></p>
+                  <p className="text-sm text-gray-500">Harga</p>
+                  <p className="text-2xl font-bold text-gray-900">IDR 655.200<span className="text-sm font-normal text-gray-500">/bulan/siswa</span></p>
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                   <Link to="/schoolio/family" className="bg-green-50 text-green-700 px-3 py-2 rounded-lg text-sm font-medium text-center hover:bg-green-100 transition">
@@ -153,8 +153,8 @@ export default function HomePage() {
                   </li>
                 </ul>
                 <div className="border-t pt-4 mb-4">
-                  <p className="text-sm text-gray-500">Mulai dari</p>
-                  <p className="text-2xl font-bold text-gray-900">$7.99<span className="text-sm font-normal text-gray-500">/bulan/siswa</span></p>
+                  <p className="text-sm text-gray-500">Harga</p>
+                  <p className="text-2xl font-bold text-gray-900">IDR 655.200<span className="text-sm font-normal text-gray-500">/bulan/siswa</span></p>
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                   <Link to="/mobymax/family" className="bg-blue-50 text-blue-700 px-3 py-2 rounded-lg text-sm font-medium text-center hover:bg-blue-100 transition">
@@ -201,8 +201,8 @@ export default function HomePage() {
                   </li>
                 </ul>
                 <div className="border-t pt-4 mb-4">
-                  <p className="text-sm text-gray-500">Biaya tes</p>
-                  <p className="text-2xl font-bold text-gray-900">$36<span className="text-sm font-normal text-gray-500">/subjek (total $144)</span></p>
+                  <p className="text-sm text-gray-500">Harga</p>
+                  <p className="text-2xl font-bold text-gray-900">IDR 1.159.200<span className="text-sm font-normal text-gray-500">/bulan/siswa</span></p>
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                   <Link to="/ged/family" className="bg-orange-50 text-orange-700 px-3 py-2 rounded-lg text-sm font-medium text-center hover:bg-orange-100 transition">
@@ -311,7 +311,7 @@ export default function HomePage() {
                   <tr>
                     <td className="px-6 py-4 text-sm text-gray-700">Biaya per tahun (per siswa)</td>
                     <td className="px-6 py-4 text-center text-sm text-red-600 font-semibold">Rp 150-500 juta</td>
-                    <td className="px-6 py-4 text-center text-sm text-green-600 font-semibold bg-green-50">Rp 5-15 juta</td>
+                    <td className="px-6 py-4 text-center text-sm text-green-600 font-semibold bg-green-50">Mulai IDR 655.200/bulan</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-sm text-gray-700">Kurikulum internasional</td>

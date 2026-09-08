@@ -149,52 +149,29 @@ export default function GEDSchoolPage() {
       {/* Pricing */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Model Kerjasama untuk Lembaga</h2>
-          <p className="text-center text-gray-600 mb-12">Pilih model partnership yang sesuai dengan lembaga Anda</p>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Harga untuk Sekolah & Lembaga</h2>
+          <p className="text-center text-gray-600 mb-12">Harga per siswa untuk institusi Anda</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="max-w-md mx-auto">
             <div className="bg-white rounded-2xl shadow-lg border-2 border-orange-500 overflow-hidden">
               <div className="bg-orange-500 text-white p-4 text-center">
-                <p className="font-bold text-lg">GED Prep Center</p>
-                <p className="text-orange-100 text-sm">Lembaga Anda sebagai pusat persiapan</p>
+                <p className="font-bold text-lg">Essential Education / GED</p>
+                <p className="text-orange-100 text-sm">Program Persiapan Pendidikan / GED</p>
               </div>
               <div className="p-6">
-                <p className="text-2xl font-bold text-gray-900 mb-1">Custom</p>
-                <p className="text-xs text-gray-500 mb-4">Sesuai jumlah siswa</p>
+                <p className="text-3xl font-bold text-gray-900 mb-1">IDR 1.159.200<span className="text-sm font-normal text-gray-500">/siswa/bulan</span></p>
+                <p className="text-xs text-gray-500 mb-4">Harga berlaku untuk institusi</p>
                 <ul className="space-y-2 text-sm text-gray-600 mb-6">
-                  <li>✓ Lembaga menjadi GED Prep Center resmi</li>
+                  <li>✓ Program persiapan 4 subjek GED</li>
                   <li>✓ Akses materi persiapan GED</li>
-                  <li>✓ Training guru (TEFL gratis)</li>
-                  <li>✓ Branding lembaga Anda</li>
-                  <li>✓ Marketing support</li>
-                  <li>✓ Revenue sharing model</li>
+                  <li>✓ Study materials & practice tests</li>
+                  <li>✓ Progress tracking</li>
+                  <li>✓ Official transcript & diploma</li>
+                  <li>✓ Training guru</li>
                   <li className="text-green-600 font-bold">✓ GRATIS TEFL Training untuk guru</li>
                 </ul>
                 <a href="mailto:info@studybuddy.id" className="block w-full bg-orange-600 text-white text-center py-3 rounded-lg font-bold hover:bg-orange-700 transition">
-                  Minta Penawaran
-                </a>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="bg-gray-800 text-white p-4 text-center">
-                <p className="font-bold text-lg">Full Partnership</p>
-                <p className="text-gray-300 text-sm">Kerjasama menyeluruh</p>
-              </div>
-              <div className="p-6">
-                <p className="text-2xl font-bold text-gray-900 mb-1">Custom</p>
-                <p className="text-xs text-gray-500 mb-4">Schoolio + MobyMax + GED</p>
-                <ul className="space-y-2 text-sm text-gray-600 mb-6">
-                  <li>✓ Semua 3 platform (PAUD-SMA)</li>
-                  <li>✓ Dedicated account manager</li>
-                  <li>✓ Full training & onboarding</li>
-                  <li>✓ Custom implementation</li>
-                  <li>✓ Priority support</li>
-                  <li>✓ Volume discount</li>
-                  <li className="text-green-600 font-bold">✓ GRATIS TEFL Training untuk guru</li>
-                </ul>
-                <a href="mailto:info@studybuddy.id" className="block w-full bg-gray-800 text-white text-center py-3 rounded-lg font-bold hover:bg-gray-900 transition">
-                  Konsultasi Gratis
+                  Hubungi Kami untuk Daftar
                 </a>
               </div>
             </div>
@@ -210,8 +187,8 @@ export default function GEDSchoolPage() {
                 <p className="text-xs text-gray-400">(infrastruktur + akreditasi + guru)</p>
               </div>
               <div className="bg-white rounded-lg p-4">
-                <p className="text-sm text-gray-500">GED Partnership via Study Buddy</p>
-                <p className="text-2xl font-bold text-green-600">Custom & Terjangkau</p>
+                <p className="text-sm text-gray-500">GED via Study Buddy</p>
+                <p className="text-2xl font-bold text-green-600">IDR 1.159.200/siswa/bulan</p>
                 <p className="text-xs text-gray-400">(tanpa investasi infrastruktur)</p>
               </div>
             </div>

@@ -112,53 +112,28 @@ export default function SchoolioSchoolPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Harga untuk Sekolah & Lembaga</h2>
-          <p className="text-center text-gray-600 mb-12">Harga spesial untuk institusi — hubungi kami untuk penawaran custom</p>
+          <p className="text-center text-gray-600 mb-12">Harga per siswa untuk institusi Anda</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="max-w-md mx-auto">
             <div className="bg-white rounded-2xl shadow-lg border-2 border-green-500 overflow-hidden">
               <div className="bg-green-500 text-white p-4 text-center">
-                <p className="font-bold text-lg">Schoolio Institution</p>
-                <p className="text-green-100 text-sm">License per siswa</p>
+                <p className="font-bold text-lg">Schoolio</p>
+                <p className="text-green-100 text-sm">Platform Pembelajaran (Kurikulum Kanada, K–8)</p>
               </div>
               <div className="p-6">
-                <p className="text-3xl font-bold text-gray-900 mb-1">$29.99<span className="text-sm font-normal text-gray-500">/siswa/bulan</span></p>
-                <p className="text-xs text-gray-500 mb-4">Harga spesial institusi tersedia</p>
+                <p className="text-3xl font-bold text-gray-900 mb-1">IDR 655.200<span className="text-sm font-normal text-gray-500">/siswa/bulan</span></p>
+                <p className="text-xs text-gray-500 mb-4">Harga berlaku untuk institusi</p>
                 <ul className="space-y-2 text-sm text-gray-600 mb-6">
                   <li>✓ Full curriculum K-8</li>
                   <li>✓ Admin dashboard</li>
                   <li>✓ Teacher management tools</li>
                   <li>✓ Student progress monitoring</li>
                   <li>✓ Transkrip & rapor internasional</li>
-                  <li>✓ Volume discount tersedia</li>
                   <li>✓ Dedicated support</li>
                   <li className="text-green-600 font-bold">✓ GRATIS TEFL Training untuk guru</li>
                 </ul>
                 <a href="mailto:info@studybuddy.id" className="block w-full bg-green-600 text-white text-center py-3 rounded-lg font-bold hover:bg-green-700 transition">
-                  Minta Penawaran
-                </a>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="bg-gray-800 text-white p-4 text-center">
-                <p className="font-bold text-lg">Custom Package</p>
-                <p className="text-gray-300 text-sm">Tailored untuk lembaga Anda</p>
-              </div>
-              <div className="p-6">
-                <p className="text-3xl font-bold text-gray-900 mb-1">Custom</p>
-                <p className="text-xs text-gray-500 mb-4">Sesuai kebutuhan lembaga</p>
-                <ul className="space-y-2 text-sm text-gray-600 mb-6">
-                  <li>✓ Multi-year discount</li>
-                  <li>✓ White-label options</li>
-                  <li>✓ Custom branding</li>
-                  <li>✓ API integration</li>
-                  <li>✓ Priority support</li>
-                  <li>✓ Training & onboarding</li>
-                  <li>✓ Dedicated account manager</li>
-                  <li className="text-green-600 font-bold">✓ GRATIS TEFL Training untuk guru</li>
-                </ul>
-                <a href="mailto:info@studybuddy.id" className="block w-full bg-gray-800 text-white text-center py-3 rounded-lg font-bold hover:bg-gray-900 transition">
-                  Konsultasi Gratis
+                  Hubungi Kami untuk Daftar
                 </a>
               </div>
             </div>
@@ -175,7 +150,7 @@ export default function SchoolioSchoolPage() {
               </div>
               <div className="bg-white rounded-lg p-4">
                 <p className="text-sm text-gray-500">Schoolio via Study Buddy</p>
-                <p className="text-2xl font-bold text-green-600">Rp 5-6 jt/siswa/th</p>
+                <p className="text-2xl font-bold text-green-600">IDR 655.200/siswa/bulan</p>
                 <p className="text-xs text-gray-400">(sudah termasuk akreditasi)</p>
               </div>
             </div>

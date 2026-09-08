@@ -116,40 +116,18 @@ export default function MobyMaxFamilyPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Harga untuk Keluarga</h2>
-          <p className="text-center text-gray-600 mb-12">Sangat terjangkau — mulai dari $7.99/bulan!</p>
+          <p className="text-center text-gray-600 mb-12">Hemat hingga 80% dibanding sekolah internasional!</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Free Trial */}
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="bg-gray-100 p-4 text-center">
-                <p className="font-bold text-lg text-gray-900">Free Trial</p>
-                <p className="text-gray-500 text-sm">30 hari gratis</p>
-              </div>
-              <div className="p-6">
-                <p className="text-3xl font-bold text-gray-900 mb-1">GRATIS</p>
-                <p className="text-xs text-gray-500 mb-4">30 hari penuh tanpa biaya</p>
-                <ul className="space-y-2 text-sm text-gray-600 mb-6">
-                  <li>✓ Akses fitur dasar</li>
-                  <li>✓ Adaptive learning</li>
-                  <li>✓ Placement test</li>
-                  <li>✓ Progress monitoring</li>
-                  <li>✓ Tanpa kartu kredit</li>
-                </ul>
-                <a href="https://www.mobymax.com/families" target="_blank" rel="noopener noreferrer" className="block w-full bg-gray-200 text-gray-800 text-center py-3 rounded-lg font-bold hover:bg-gray-300 transition">
-                  Mulai Gratis
-                </a>
-              </div>
-            </div>
-
-            {/* Family Subscription */}
+          <div className="max-w-md mx-auto">
+            {/* MobyMax Subscription */}
             <div className="bg-white rounded-2xl shadow-lg border-2 border-blue-500 overflow-hidden">
               <div className="bg-blue-500 text-white p-4 text-center">
-                <p className="font-bold text-lg">Family Subscription</p>
-                <p className="text-blue-100 text-sm">Akses penuh semua fitur</p>
+                <p className="font-bold text-lg">MobyMax</p>
+                <p className="text-blue-100 text-sm">Platform Pembelajaran (Adaptive Learning)</p>
               </div>
               <div className="p-6">
-                <p className="text-3xl font-bold text-gray-900 mb-1">$7.99<span className="text-sm font-normal text-gray-500">/bulan</span></p>
-                <p className="text-xs text-gray-500 mb-4">atau $59/tahun (hemat 38%)</p>
+                <p className="text-3xl font-bold text-gray-900 mb-1">IDR 655.200<span className="text-sm font-normal text-gray-500">/bulan/siswa</span></p>
+                <p className="text-xs text-gray-500 mb-4">Akses penuh semua fitur platform</p>
                 <ul className="space-y-2 text-sm text-gray-600 mb-6">
                   <li>✓ Semua 60+ modul kurikulum</li>
                   <li>✓ Differentiated learning penuh</li>
@@ -159,8 +137,8 @@ export default function MobyMaxFamilyPage() {
                   <li>✓ Print progress reports</li>
                   <li>✓ IEP creation tools</li>
                 </ul>
-                <a href="https://www.mobymax.com/families" target="_blank" rel="noopener noreferrer" className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-bold hover:bg-blue-700 transition">
-                  Berlangganan Sekarang
+                <a href="mailto:info@studybuddy.id" className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+                  Hubungi Kami untuk Daftar
                 </a>
               </div>
             </div>
@@ -176,10 +154,10 @@ export default function MobyMaxFamilyPage() {
               </div>
               <div className="bg-white rounded-lg p-4">
                 <p className="text-sm text-gray-500">MobyMax via Study Buddy</p>
-                <p className="text-2xl font-bold text-green-600">Rp 1.2 jt/th</p>
+                <p className="text-2xl font-bold text-green-600">IDR 655.200/bulan</p>
+                <p className="text-xs text-gray-400 mt-1">(IDR 7.862.400/tahun)</p>
               </div>
             </div>
-            <p className="text-center text-sm text-gray-600 mt-4">*Estimasi: $7.99/bulan ≈ Rp 125.000/bulan ≈ Rp 1.5 juta/tahun. Sangat terjangkau!</p>
           </div>
         </div>
       </section>

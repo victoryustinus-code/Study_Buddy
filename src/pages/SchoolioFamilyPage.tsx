@@ -95,73 +95,27 @@ export default function SchoolioFamilyPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Harga untuk Keluarga</h2>
           <p className="text-center text-gray-600 mb-12">Hemat hingga 80% dibanding sekolah internasional!</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {/* Complete Plan */}
+          <div className="max-w-md mx-auto">
+            {/* Schoolio Plan */}
             <div className="bg-white rounded-2xl shadow-lg border-2 border-green-500 overflow-hidden">
               <div className="bg-green-500 text-white p-4 text-center">
-                <p className="font-bold text-lg">Complete Plan</p>
-                <p className="text-green-100 text-sm">Semua mata pelajaran</p>
+                <p className="font-bold text-lg">Schoolio</p>
+                <p className="text-green-100 text-sm">Platform Pembelajaran (Kurikulum Kanada, K–8)</p>
               </div>
               <div className="p-6">
-                <p className="text-3xl font-bold text-gray-900 mb-1">$29.99<span className="text-sm font-normal text-gray-500">/bulan</span></p>
-                <p className="text-xs text-gray-500 mb-4">atau $299.99/tahun (hemat 17%)</p>
+                <p className="text-3xl font-bold text-gray-900 mb-1">IDR 655.200<span className="text-sm font-normal text-gray-500">/bulan/siswa</span></p>
+                <p className="text-xs text-gray-500 mb-4">Akses penuh semua fitur platform</p>
                 <ul className="space-y-2 text-sm text-gray-600 mb-6">
                   <li>✓ Akses semua mata pelajaran K-8</li>
                   <li>✓ Mix & match subject & level</li>
                   <li>✓ Video lessons + printable PDFs</li>
                   <li>✓ Progress dashboard & transkrip</li>
                   <li>✓ Future Readiness library</li>
-                  <li>✓ Live support & komunitas</li>
-                  <li>✓ 15% diskon saudara ke-2+</li>
+                  <li>✓ Rapor & transkrip internasional</li>
+                  <li>✓ Neurodivergent-friendly</li>
                 </ul>
-                <a href="https://digital.schoolio.com/sign-up" target="_blank" rel="noopener noreferrer" className="block w-full bg-green-600 text-white text-center py-3 rounded-lg font-bold hover:bg-green-700 transition">
-                  Mulai 7 Hari Gratis
-                </a>
-              </div>
-            </div>
-
-            {/* Subject Mastery */}
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="bg-gray-100 p-4 text-center">
-                <p className="font-bold text-lg text-gray-900">Subject Mastery</p>
-                <p className="text-gray-500 text-sm">Per mata pelajaran</p>
-              </div>
-              <div className="p-6">
-                <p className="text-3xl font-bold text-gray-900 mb-1">$4.99<span className="text-sm font-normal text-gray-500">/subject/bulan</span></p>
-                <p className="text-xs text-gray-500 mb-4">~~$9.99~~ (50% OFF!)</p>
-                <ul className="space-y-2 text-sm text-gray-600 mb-6">
-                  <li>✓ Pilih mata pelajaran yang dibutuhkan</li>
-                  <li>✓ Adaptive learning per subject</li>
-                  <li>✓ AI-powered quiz help</li>
-                  <li>✓ Concept lock mastery</li>
-                  <li>✓ Progress tracking</li>
-                  <li>✓ Cancel anytime</li>
-                </ul>
-                <a href="https://digital.schoolio.com/subject-mastery" target="_blank" rel="noopener noreferrer" className="block w-full bg-gray-800 text-white text-center py-3 rounded-lg font-bold hover:bg-gray-900 transition">
-                  Coba Subject Mastery
-                </a>
-              </div>
-            </div>
-
-            {/* Bookstore */}
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="bg-gray-100 p-4 text-center">
-                <p className="font-bold text-lg text-gray-900">Bookstore (Offline)</p>
-                <p className="text-gray-500 text-sm">Tanpa langganan</p>
-              </div>
-              <div className="p-6">
-                <p className="text-3xl font-bold text-gray-900 mb-1">Beli per buku</p>
-                <p className="text-xs text-gray-500 mb-4">PDF atau PDF + cetak dikirim</p>
-                <ul className="space-y-2 text-sm text-gray-600 mb-6">
-                  <li>✓ Open-and-go scripted lessons</li>
-                  <li>✓ Full-color printed books</li>
-                  <li>✓ No subscription needed</li>
-                  <li>✓ Buy only what you need</li>
-                  <li>✓ Hands-on activities included</li>
-                  <li>✓ Screen-free option</li>
-                </ul>
-                <a href="https://schoolio.com/schoolio-curriculum-bookstore/" target="_blank" rel="noopener noreferrer" className="block w-full bg-gray-800 text-white text-center py-3 rounded-lg font-bold hover:bg-gray-900 transition">
-                  Kunjungi Bookstore
+                <a href="mailto:info@studybuddy.id" className="block w-full bg-green-600 text-white text-center py-3 rounded-lg font-bold hover:bg-green-700 transition">
+                  Hubungi Kami untuk Daftar
                 </a>
               </div>
             </div>
@@ -177,10 +131,10 @@ export default function SchoolioFamilyPage() {
               </div>
               <div className="bg-white rounded-lg p-4">
                 <p className="text-sm text-gray-500">Schoolio via Study Buddy</p>
-                <p className="text-2xl font-bold text-green-600">Rp 5-6 jt/th</p>
+                <p className="text-2xl font-bold text-green-600">IDR 655.200/bulan</p>
+                <p className="text-xs text-gray-400 mt-1">(IDR 7.862.400/tahun)</p>
               </div>
             </div>
-            <p className="text-center text-sm text-gray-600 mt-4">*Estimasi berdasarkan kurs saat ini. Harga Schoolio $29.99/bulan ≈ Rp 470.000/bulan ≈ Rp 5.6 juta/tahun</p>
           </div>
         </div>
       </section>

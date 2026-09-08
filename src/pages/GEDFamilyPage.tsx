@@ -118,72 +118,30 @@ export default function GEDFamilyPage() {
       {/* Pricing */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Biaya Tes GED</h2>
-          <p className="text-center text-gray-600 mb-12">Investasi kecil untuk ijazah yang membuka pintu ke universitas dunia</p>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Harga Program GED</h2>
+          <p className="text-center text-gray-600 mb-12">Investasi terjangkau untuk ijazah yang membuka pintu ke universitas dunia</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {/* Per Subject */}
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="bg-gray-100 p-4 text-center">
-                <p className="font-bold text-lg text-gray-900">Per Subjek</p>
-                <p className="text-gray-500 text-sm">Bayar per tes</p>
-              </div>
-              <div className="p-6">
-                <p className="text-3xl font-bold text-gray-900 mb-1">$36<span className="text-sm font-normal text-gray-500">/subjek</span></p>
-                <p className="text-xs text-gray-500 mb-4">Atau $30-$40 tergantung negara bagian</p>
-                <ul className="space-y-2 text-sm text-gray-600 mb-6">
-                  <li>✓ 1 subjek tes</li>
-                  <li>✓ Same-day scoring</li>
-                  <li>✓ Online or test center</li>
-                  <li>✓ Personalized score report</li>
-                </ul>
-                <a href="https://app.ged.com/signup" target="_blank" rel="noopener noreferrer" className="block w-full bg-gray-200 text-gray-800 text-center py-3 rounded-lg font-bold hover:bg-gray-300 transition">
-                  Daftar Sekarang
-                </a>
-              </div>
-            </div>
-
-            {/* Full Battery */}
+          <div className="max-w-md mx-auto">
+            {/* GED Program */}
             <div className="bg-white rounded-2xl shadow-lg border-2 border-orange-500 overflow-hidden">
               <div className="bg-orange-500 text-white p-4 text-center">
-                <p className="font-bold text-lg">Full Battery (4 Subjek)</p>
-                <p className="text-orange-100 text-sm">Paket lengkap</p>
+                <p className="font-bold text-lg">Essential Education / GED</p>
+                <p className="text-orange-100 text-sm">Program Persiapan Pendidikan / GED</p>
               </div>
               <div className="p-6">
-                <p className="text-3xl font-bold text-gray-900 mb-1">$144<span className="text-sm font-normal text-gray-500">/total</span></p>
-                <p className="text-xs text-gray-500 mb-4">($36 × 4 subjek)</p>
+                <p className="text-3xl font-bold text-gray-900 mb-1">IDR 1.159.200<span className="text-sm font-normal text-gray-500">/bulan/siswa</span></p>
+                <p className="text-xs text-gray-500 mb-4">Akses penuh program persiapan GED</p>
                 <ul className="space-y-2 text-sm text-gray-600 mb-6">
-                  <li>✓ Semua 4 subjek tes</li>
-                  <li>✓ Same-day scoring</li>
-                  <li>✓ Official transcript</li>
-                  <li>✓ GED Diploma</li>
-                  <li>✓ Diterima 98% universitas</li>
-                  <li>✓ Bisa cicil per subjek</li>
+                  <li>✓ Program persiapan 4 subjek GED</li>
+                  <li>✓ Study materials & practice tests</li>
+                  <li>✓ AI tutor feedback</li>
+                  <li>✓ Progress tracking</li>
+                  <li>✓ Official transcript & diploma</li>
+                  <li>✓ Diterima 98% universitas dunia</li>
+                  <li>✓ Persiapan kuliah & karir global</li>
                 </ul>
-                <a href="https://app.ged.com/signup" target="_blank" rel="noopener noreferrer" className="block w-full bg-orange-600 text-white text-center py-3 rounded-lg font-bold hover:bg-orange-700 transition">
-                  Mulai Persiapan
-                </a>
-              </div>
-            </div>
-
-            {/* GED+ */}
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="bg-gray-800 text-white p-4 text-center">
-                <p className="font-bold text-lg">GED+</p>
-                <p className="text-gray-300 text-sm">Dengan personal advisor</p>
-              </div>
-              <div className="p-6">
-                <p className="text-3xl font-bold text-gray-900 mb-1">Custom</p>
-                <p className="text-xs text-gray-500 mb-4">Premium support</p>
-                <ul className="space-y-2 text-sm text-gray-600 mb-6">
-                  <li>✓ Personal advisor</li>
-                  <li>✓ Study tools lengkap</li>
-                  <li>✓ Practice tests</li>
-                  <li>✓ Continued access sampai lulus</li>
-                  <li>✓ Priority support</li>
-                </ul>
-                <a href="https://www.ged.com/study/ged-plus.html" target="_blank" rel="noopener noreferrer" className="block w-full bg-gray-800 text-white text-center py-3 rounded-lg font-bold hover:bg-gray-900 transition">
-                  Pelajari GED+
+                <a href="mailto:info@studybuddy.id" className="block w-full bg-orange-600 text-white text-center py-3 rounded-lg font-bold hover:bg-orange-700 transition">
+                  Hubungi Kami untuk Daftar
                 </a>
               </div>
             </div>
@@ -199,11 +157,10 @@ export default function GEDFamilyPage() {
               </div>
               <div className="bg-white rounded-lg p-4">
                 <p className="text-sm text-gray-500">GED via Study Buddy</p>
-                <p className="text-2xl font-bold text-green-600">Rp 2-3 jt</p>
-                <p className="text-xs text-gray-400">(biaya tes saja)</p>
+                <p className="text-2xl font-bold text-green-600">IDR 1.159.200/bulan</p>
+                <p className="text-xs text-gray-400 mt-1">(IDR 13.910.400/tahun)</p>
               </div>
             </div>
-            <p className="text-center text-sm text-gray-600 mt-4">*Belum termasuk biaya persiapan belajar. Total tetap jauh lebih hemat dibanding sekolah internasional!</p>
           </div>
         </div>
       </section>

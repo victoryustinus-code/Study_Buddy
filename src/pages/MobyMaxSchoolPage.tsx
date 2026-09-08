@@ -50,7 +50,7 @@ export default function MobyMaxSchoolPage() {
             <div className="bg-white border-2 border-blue-100 rounded-xl p-6 hover:shadow-lg transition">
               <span className="text-3xl mb-3 block">💰</span>
               <h3 className="font-bold text-gray-900 mb-2">Hemat 90%+ Biaya EdTech</h3>
-              <p className="text-sm text-gray-600">Rata-rata sekolah bayar $75,000+ untuk multiple tools. MobyMax hanya $4,795 untuk semua.</p>
+              <p className="text-sm text-gray-600">Hemat drastis dibanding biaya sekolah internasional. MobyMax via Study Buddy hanya IDR 655.200/siswa/bulan.</p>
             </div>
             <div className="bg-white border-2 border-blue-100 rounded-xl p-6 hover:shadow-lg transition">
               <span className="text-3xl mb-3 block">📊</span>
@@ -85,20 +85,20 @@ export default function MobyMaxSchoolPage() {
               <div>
                 <div className="bg-red-50 rounded-xl p-6 mb-4">
                   <p className="text-sm text-red-600 font-semibold mb-1">Tanpa MobyMax</p>
-                  <p className="text-3xl font-bold text-red-600">$75,000+/tahun</p>
-                  <p className="text-xs text-gray-500 mt-1">Rata-rata sekolah bayar untuk multiple edtech solutions</p>
+                  <p className="text-3xl font-bold text-red-600">Rp 150-500 jt/tahun</p>
+                  <p className="text-xs text-gray-500 mt-1">Biaya sekolah internasional per siswa</p>
                 </div>
                 <div className="bg-green-50 rounded-xl p-6">
-                  <p className="text-sm text-green-600 font-semibold mb-1">Dengan MobyMax</p>
-                  <p className="text-3xl font-bold text-green-600">$4,795/tahun</p>
+                  <p className="text-sm text-green-600 font-semibold mb-1">Dengan MobyMax via Study Buddy</p>
+                  <p className="text-3xl font-bold text-green-600">IDR 655.200/siswa/bulan</p>
                   <p className="text-xs text-gray-500 mt-1">Complete suite — curriculum + assessments + reporting</p>
                 </div>
               </div>
               <div className="text-center">
                 <div className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-8 text-white">
-                  <p className="text-5xl font-bold mb-2">93%</p>
+                  <p className="text-5xl font-bold mb-2">80%+</p>
                   <p className="text-xl">Penghematan Biaya</p>
-                  <p className="text-blue-200 text-sm mt-2">Hemat lebih dari $70,000 per tahun!</p>
+                  <p className="text-blue-200 text-sm mt-2">Jauh lebih hemat dibanding sekolah internasional!</p>
                 </div>
               </div>
             </div>
@@ -142,51 +142,28 @@ export default function MobyMaxSchoolPage() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Harga untuk Sekolah & Lembaga</h2>
-          <p className="text-center text-gray-600 mb-12">Pilihan lisensi yang fleksibel untuk institusi Anda</p>
+          <p className="text-center text-gray-600 mb-12">Harga per siswa untuk institusi Anda</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="max-w-md mx-auto">
             <div className="bg-white rounded-2xl shadow-lg border-2 border-blue-500 overflow-hidden">
               <div className="bg-blue-500 text-white p-4 text-center">
-                <p className="font-bold text-lg">Sitewide License</p>
-                <p className="text-blue-100 text-sm">1 sekolah, unlimited siswa</p>
+                <p className="font-bold text-lg">MobyMax</p>
+                <p className="text-blue-100 text-sm">Platform Pembelajaran (Adaptive Learning)</p>
               </div>
               <div className="p-6">
-                <p className="text-3xl font-bold text-gray-900 mb-1">$4,795<span className="text-sm font-normal text-gray-500">/sekolah/tahun</span></p>
-                <p className="text-xs text-gray-500 mb-4">atau mulai $99 untuk add-on</p>
+                <p className="text-3xl font-bold text-gray-900 mb-1">IDR 655.200<span className="text-sm font-normal text-gray-500">/siswa/bulan</span></p>
+                <p className="text-xs text-gray-500 mb-4">Harga berlaku untuk institusi</p>
                 <ul className="space-y-2 text-sm text-gray-600 mb-6">
-                  <li>✓ Unlimited students</li>
                   <li>✓ All 60+ curriculum modules</li>
                   <li>✓ Full assessment suite</li>
                   <li>✓ Admin dashboard</li>
                   <li>✓ 360° reporting</li>
-                  <li>✓ Multi-year discount tersedia</li>
-                  <li className="text-green-600 font-bold">✓ GRATIS TEFL Training untuk guru</li>
-                </ul>
-                <a href="mailto:info@studybuddy.id" className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-bold hover:bg-blue-700 transition">
-                  Minta Penawaran
-                </a>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="bg-gray-800 text-white p-4 text-center">
-                <p className="font-bold text-lg">Student License</p>
-                <p className="text-gray-300 text-sm">Per siswa individual</p>
-              </div>
-              <div className="p-6">
-                <p className="text-3xl font-bold text-gray-900 mb-1">Custom</p>
-                <p className="text-xs text-gray-500 mb-4">Hubungi untuk harga per siswa</p>
-                <ul className="space-y-2 text-sm text-gray-600 mb-6">
-                  <li>✓ Flexible student count</li>
-                  <li>✓ All modules included</li>
                   <li>✓ Teacher dashboard</li>
-                  <li>✓ Parent reports</li>
-                  <li>✓ Volume discounts</li>
                   <li>✓ Training & onboarding</li>
                   <li className="text-green-600 font-bold">✓ GRATIS TEFL Training untuk guru</li>
                 </ul>
-                <a href="mailto:info@studybuddy.id" className="block w-full bg-gray-800 text-white text-center py-3 rounded-lg font-bold hover:bg-gray-900 transition">
-                  Konsultasi Gratis
+                <a href="mailto:info@studybuddy.id" className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+                  Hubungi Kami untuk Daftar
                 </a>
               </div>
             </div>
