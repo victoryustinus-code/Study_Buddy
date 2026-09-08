@@ -28,8 +28,8 @@ export default function GEDSchoolPage() {
               Tawarkan program persiapan ijazah SMA internasional kepada siswa Anda. GED diterima di 98% universitas dan perusahaan dunia.
             </p>
             <div className="flex flex-wrap gap-3">
-              <a href="mailto:info@studybuddy.id" className="bg-yellow-400 text-gray-900 px-6 py-3 rounded-xl font-bold hover:bg-yellow-300 transition">
-                Jadi Mitra →
+              <a href="https://wa.me/62881037380330" target="_blank" rel="noopener noreferrer" className="bg-yellow-400 text-gray-900 px-6 py-3 rounded-xl font-bold hover:bg-yellow-300 transition">
+                💬 Jadi Mitra →
               </a>
               <a href="https://www.essentialed.com/educators/ged-academy" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-6 py-3 rounded-xl font-bold hover:bg-white hover:text-orange-700 transition">
                 Kunjungi GED Academy
@@ -174,8 +174,8 @@ export default function GEDSchoolPage() {
                   <li>✓ Training guru</li>
                   <li className="text-green-600 font-bold">✓ GRATIS TEFL Training untuk guru</li>
                 </ul>
-                <a href="mailto:info@studybuddy.id" className="block w-full bg-orange-600 text-white text-center py-3 rounded-lg font-bold hover:bg-orange-700 transition">
-                  Hubungi Kami untuk Daftar
+                <a href="https://wa.me/62881037380330" target="_blank" rel="noopener noreferrer" className="block w-full bg-orange-600 text-white text-center py-3 rounded-lg font-bold hover:bg-orange-700 transition">
+                  💬 Hubungi Kami via WhatsApp
                 </a>
               </div>
             </div>
@@ -235,10 +235,10 @@ export default function GEDSchoolPage() {
           <h2 className="text-3xl font-bold mb-4">Tawarkan Ijazah SMA Internasional di Lembaga Anda</h2>
           <p className="text-orange-100 text-lg mb-6">Jadilah GED Prep Center dan buka pintu universitas dunia untuk siswa-siswi Anda.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="mailto:info@studybuddy.id" className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-300 transition">
-              📧 Jadilah Mitra
+            <a href="mailto:studybuddyindonesia1@gmail.com" className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-300 transition">
+              📧 Email Kami
             </a>
-            <a href="https://wa.me/6281234567890" className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-red-700 transition">
+            <a href="https://wa.me/62881037380330" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-red-700 transition">
               💬 WhatsApp Kami
             </a>
           </div>

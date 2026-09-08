@@ -54,8 +54,9 @@ export default function Navbar() {
                 <Link to="/ged/school" className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-b-lg">Untuk Sekolah & Lembaga</Link>
               </div>
             </div>
-            <a href="#kontak" className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition">
-              Hubungi Kami
+            <a href="https://wa.me/62881037380330" target="_blank" rel="noopener noreferrer" className="bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-700 transition flex items-center space-x-1">
+              <span>💬</span>
+              <span>Hubungi Kami</span>
             </a>
           </div>
 

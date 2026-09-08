@@ -144,8 +144,8 @@ export default function GEDFamilyPage() {
                   <li>✓ Diterima 98% universitas dunia</li>
                   <li>✓ Persiapan kuliah & karir global</li>
                 </ul>
-                <a href="mailto:info@studybuddy.id" className="block w-full bg-orange-600 text-white text-center py-3 rounded-lg font-bold hover:bg-orange-700 transition">
-                  Hubungi Kami untuk Daftar
+                <a href="https://wa.me/62881037380330" target="_blank" rel="noopener noreferrer" className="block w-full bg-orange-600 text-white text-center py-3 rounded-lg font-bold hover:bg-orange-700 transition">
+                  💬 Hubungi Kami via WhatsApp
                 </a>
               </div>
             </div>

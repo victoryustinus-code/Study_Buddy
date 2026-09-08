@@ -425,10 +425,10 @@ export default function HomePage() {
             Hubungi kami untuk konsultasi gratis dan temukan platform yang tepat untuk kebutuhan sekolah atau lembaga Anda.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="mailto:info@studybuddy.id" className="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition">
+            <a href="mailto:studybuddyindonesia1@gmail.com" className="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition">
               📧 Email Kami
             </a>
-            <a href="https://wa.me/6281234567890" className="bg-green-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-700 transition">
+            <a href="https://wa.me/62881037380330" target="_blank" rel="noopener noreferrer" className="bg-green-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-700 transition">
               💬 WhatsApp
             </a>
           </div>

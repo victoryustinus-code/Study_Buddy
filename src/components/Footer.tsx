@@ -45,28 +45,25 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Hubungi Kami</h3>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li className="flex items-center space-x-2">
+              <li className="flex items-start space-x-2">
                 <span>📧</span>
-                <span>info@studybuddy.id</span>
+                <a href="mailto:studybuddyindonesia1@gmail.com" className="hover:text-white transition">studybuddyindonesia1@gmail.com</a>
               </li>
-              <li className="flex items-center space-x-2">
-                <span>📱</span>
-                <span>+62 812-3456-7890</span>
+              <li className="flex items-start space-x-2">
+                <span>💬</span>
+                <a href="https://wa.me/62881037380330" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">+62 881-0373-80330</a>
               </li>
-              <li className="flex items-center space-x-2">
+              <li className="flex items-start space-x-2">
                 <span>📍</span>
-                <span>Jakarta, Indonesia</span>
+                <span>Jl. Nuasa Utama Raya No. 257, Jimbaran, Kuta Selatan - Badung</span>
               </li>
             </ul>
             <div className="flex space-x-3 mt-4">
-              <a href="#" className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
-                <span className="text-sm">📘</span>
-              </a>
-              <a href="#" className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-pink-600 transition">
-                <span className="text-sm">📷</span>
-              </a>
-              <a href="#" className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-green-600 transition">
+              <a href="https://wa.me/62881037380330" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-green-600 transition">
                 <span className="text-sm">💬</span>
+              </a>
+              <a href="mailto:studybuddyindonesia1@gmail.com" className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition">
+                <span className="text-sm">📧</span>
               </a>
             </div>
           </div>

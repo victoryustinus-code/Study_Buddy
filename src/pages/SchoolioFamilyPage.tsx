@@ -118,8 +118,8 @@ export default function SchoolioFamilyPage() {
                   <li>✓ Rapor & transkrip internasional</li>
                   <li>✓ Neurodivergent-friendly</li>
                 </ul>
-                <a href="mailto:info@studybuddy.id" className="block w-full bg-green-600 text-white text-center py-3 rounded-lg font-bold hover:bg-green-700 transition">
-                  Hubungi Kami untuk Daftar
+                <a href="https://wa.me/62881037380330" target="_blank" rel="noopener noreferrer" className="block w-full bg-green-600 text-white text-center py-3 rounded-lg font-bold hover:bg-green-700 transition">
+                  💬 Hubungi Kami via WhatsApp
                 </a>
               </div>
             </div>

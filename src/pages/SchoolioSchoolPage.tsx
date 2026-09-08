@@ -31,8 +31,8 @@ export default function SchoolioSchoolPage() {
               <a href="https://calendly.com/lindsey-schoolio/digital-walkthrough" target="_blank" rel="noopener noreferrer" className="bg-yellow-400 text-gray-900 px-6 py-3 rounded-xl font-bold hover:bg-yellow-300 transition">
                 Request Demo →
               </a>
-              <a href="mailto:info@studybuddy.id" className="border-2 border-white text-white px-6 py-3 rounded-xl font-bold hover:bg-white hover:text-green-700 transition">
-                Hubungi Kami
+              <a href="https://wa.me/62881037380330" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-6 py-3 rounded-xl font-bold hover:bg-white hover:text-green-700 transition">
+                💬 Hubungi Kami
               </a>
             </div>
           </div>
@@ -136,8 +136,8 @@ export default function SchoolioSchoolPage() {
                   <li>✓ Dedicated support</li>
                   <li className="text-green-600 font-bold">✓ GRATIS TEFL Training untuk guru</li>
                 </ul>
-                <a href="mailto:info@studybuddy.id" className="block w-full bg-green-600 text-white text-center py-3 rounded-lg font-bold hover:bg-green-700 transition">
-                  Hubungi Kami untuk Daftar
+                <a href="https://wa.me/62881037380330" target="_blank" rel="noopener noreferrer" className="block w-full bg-green-600 text-white text-center py-3 rounded-lg font-bold hover:bg-green-700 transition">
+                  💬 Hubungi Kami via WhatsApp
                 </a>
               </div>
             </div>
@@ -197,10 +197,10 @@ export default function SchoolioSchoolPage() {
           <h2 className="text-3xl font-bold mb-4">Jadikan Lembaga Anda Berstandar Internasional</h2>
           <p className="text-green-100 text-lg mb-6">Hubungi kami untuk demo gratis dan penawaran khusus untuk institusi Anda.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="mailto:info@studybuddy.id" className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-300 transition">
-              📧 Minta Penawaran
+            <a href="mailto:studybuddyindonesia1@gmail.com" className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-300 transition">
+              📧 Email Kami
             </a>
-            <a href="https://wa.me/6281234567890" className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-green-700 transition">
+            <a href="https://wa.me/62881037380330" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-green-700 transition">
               💬 WhatsApp Kami
             </a>
           </div>
