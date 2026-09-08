@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Logo from '../components/Logo';
 
 export default function MobyMaxFamilyPage() {
   return (
@@ -18,7 +19,10 @@ export default function MobyMaxFamilyPage() {
               <span className="text-blue-300">/</span>
               <span className="text-white text-sm font-medium">Keluarga</span>
             </div>
-            <span className="inline-block bg-white/20 rounded-full px-4 py-1 text-sm mb-4">🏠 Untuk Keluarga / Homeschool</span>
+            <div className="flex items-center gap-3 mb-4">
+              <Logo brand="mobymax" size="large" />
+              <span className="inline-block bg-white/20 rounded-full px-4 py-1 text-sm">🏠 Untuk Keluarga / Homeschool</span>
+            </div>
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4">MobyMax untuk Keluarga</h1>
             <p className="text-xl text-blue-100 mb-6">
               Platform belajar adaptif paling award-winning di dunia. Temukan dan perbaiki learning gap anak Anda dari SD sampai SMP Kelas 8.

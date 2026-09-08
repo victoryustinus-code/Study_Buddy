@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Logo from '../components/Logo';
 
 export default function GEDSchoolPage() {
   return (
@@ -18,7 +19,10 @@ export default function GEDSchoolPage() {
               <span className="text-orange-300">/</span>
               <span className="text-white text-sm font-medium">Sekolah & Lembaga</span>
             </div>
-            <span className="inline-block bg-yellow-400 text-gray-900 rounded-full px-4 py-1 text-sm font-bold mb-4">🏫 Untuk Sekolah & Lembaga Kursus</span>
+            <div className="flex items-center gap-3 mb-4">
+              <Logo brand="ged" size="large" />
+              <span className="inline-block bg-yellow-400 text-gray-900 rounded-full px-4 py-1 text-sm font-bold">🏫 Untuk Sekolah & Lembaga Kursus</span>
+            </div>
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4">GED untuk Sekolah & Lembaga</h1>
             <p className="text-xl text-orange-100 mb-6">
               Tawarkan program persiapan ijazah SMA internasional kepada siswa Anda. GED diterima di 98% universitas dan perusahaan dunia.

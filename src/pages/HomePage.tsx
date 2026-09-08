@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Logo from '../components/Logo';
 
 export default function HomePage() {
   return (
@@ -16,7 +17,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 relative">
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-              <span className="text-sm font-medium">🎓 Mitra Pendidikan Digital Internasional</span>
+              <span className="text-sm font-medium">🎓 Where Learning Meets Technology</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
               Upgrade Program Sekolah Anda dengan <span className="text-yellow-300">Platform Belajar Digital</span> Bertaraf Internasional
@@ -76,7 +77,7 @@ export default function HomePage() {
               <div className="bg-gradient-to-br from-green-400 to-emerald-600 p-6 text-white">
                 <div className="flex items-center justify-between mb-4">
                   <span className="bg-white/20 rounded-full px-3 py-1 text-xs font-medium">PAUD - SMP Kelas 8</span>
-                  <span className="text-3xl">📚</span>
+                  <Logo brand="schoolio" size="small" />
                 </div>
                 <h3 className="text-2xl font-bold">Schoolio</h3>
                 <p className="text-green-100 text-sm mt-2">Kurikulum lengkap untuk homeschool & sekolah</p>
@@ -124,7 +125,7 @@ export default function HomePage() {
               <div className="bg-gradient-to-br from-blue-400 to-indigo-600 p-6 text-white">
                 <div className="flex items-center justify-between mb-4">
                   <span className="bg-white/20 rounded-full px-3 py-1 text-xs font-medium">SD - SMP Kelas 8</span>
-                  <span className="text-3xl">🏆</span>
+                  <Logo brand="mobymax" size="small" />
                 </div>
                 <h3 className="text-2xl font-bold">MobyMax</h3>
                 <p className="text-blue-100 text-sm mt-2">Persiapan akademik bertaraf internasional</p>
@@ -172,7 +173,7 @@ export default function HomePage() {
               <div className="bg-gradient-to-br from-orange-400 to-red-600 p-6 text-white">
                 <div className="flex items-center justify-between mb-4">
                   <span className="bg-white/20 rounded-full px-3 py-1 text-xs font-medium">Kelas 9 - 12 (SMA)</span>
-                  <span className="text-3xl">🎓</span>
+                  <Logo brand="ged" size="small" />
                 </div>
                 <h3 className="text-2xl font-bold">GED</h3>
                 <p className="text-orange-100 text-sm mt-2">Ijazah SMA setara yang diterima kampus dunia</p>

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Logo from '../components/Logo';
 
 export default function MobyMaxSchoolPage() {
   return (
@@ -18,7 +19,10 @@ export default function MobyMaxSchoolPage() {
               <span className="text-blue-300">/</span>
               <span className="text-white text-sm font-medium">Sekolah & Lembaga</span>
             </div>
-            <span className="inline-block bg-yellow-400 text-gray-900 rounded-full px-4 py-1 text-sm font-bold mb-4">🏫 Untuk Sekolah & Lembaga Kursus</span>
+            <div className="flex items-center gap-3 mb-4">
+              <Logo brand="mobymax" size="large" />
+              <span className="inline-block bg-yellow-400 text-gray-900 rounded-full px-4 py-1 text-sm font-bold">🏫 Untuk Sekolah & Lembaga Kursus</span>
+            </div>
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4">MobyMax untuk Sekolah & Lembaga</h1>
             <p className="text-xl text-blue-100 mb-6">
               Platform pembelajaran adaptif #1 yang digunakan 1.5 juta+ guru di seluruh dunia. Upgrade program akademik lembaga Anda dengan solusi yang diakui internasional.

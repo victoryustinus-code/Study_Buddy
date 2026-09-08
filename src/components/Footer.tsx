@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 
 export default function Footer() {
   return (
@@ -8,10 +9,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">SB</span>
+              <Logo brand="studybuddy" size="medium" />
+              <div className="flex flex-col">
+                <span className="text-xl font-bold">Study Buddy</span>
+                <span className="text-xs text-gray-400 -mt-1">where learning meets technology</span>
               </div>
-              <span className="text-xl font-bold">Study Buddy</span>
             </div>
             <p className="text-gray-400 text-sm">
               Mitra sekolah dan lembaga kursus untuk upgrade program pendidikan digital dengan rapor dan ijazah internasional.

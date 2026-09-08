@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
+import Logo from './Logo';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,10 +14,11 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">SB</span>
+              <Logo brand="studybuddy" size="medium" />
+              <div className="flex flex-col">
+                <span className="text-xl font-bold text-gray-800">Study Buddy</span>
+                <span className="text-xs text-gray-500 -mt-1 hidden sm:block">where learning meets technology</span>
               </div>
-              <span className="text-xl font-bold text-gray-800">Study Buddy</span>
             </Link>
           </div>
 

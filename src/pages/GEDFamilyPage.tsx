@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Logo from '../components/Logo';
 
 export default function GEDFamilyPage() {
   return (
@@ -18,7 +19,10 @@ export default function GEDFamilyPage() {
               <span className="text-orange-300">/</span>
               <span className="text-white text-sm font-medium">Keluarga</span>
             </div>
-            <span className="inline-block bg-white/20 rounded-full px-4 py-1 text-sm mb-4">🏠 Untuk Keluarga / Homeschool</span>
+            <div className="flex items-center gap-3 mb-4">
+              <Logo brand="ged" size="large" />
+              <span className="inline-block bg-white/20 rounded-full px-4 py-1 text-sm">🏠 Untuk Keluarga / Homeschool</span>
+            </div>
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4">GED untuk Keluarga</h1>
             <p className="text-xl text-orange-100 mb-6">
               Ijazah setara SMA yang diterima di 98% universitas dan perusahaan di seluruh dunia. Persiapan tes internasional untuk kelas 9-12.

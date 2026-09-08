@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Logo from '../components/Logo';
 
 export default function SchoolioSchoolPage() {
   return (
@@ -18,7 +19,10 @@ export default function SchoolioSchoolPage() {
               <span className="text-green-300">/</span>
               <span className="text-white text-sm font-medium">Sekolah & Lembaga</span>
             </div>
-            <span className="inline-block bg-yellow-400 text-gray-900 rounded-full px-4 py-1 text-sm font-bold mb-4">🏫 Untuk Sekolah & Lembaga Kursus</span>
+            <div className="flex items-center gap-3 mb-4">
+              <Logo brand="schoolio" size="large" />
+              <span className="inline-block bg-yellow-400 text-gray-900 rounded-full px-4 py-1 text-sm font-bold">🏫 Untuk Sekolah & Lembaga Kursus</span>
+            </div>
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Schoolio untuk Sekolah & Lembaga</h1>
             <p className="text-xl text-green-100 mb-6">
               Upgrade program lembaga Anda dengan kurikulum homeschool terakreditasi internasional. Tawarkan rapor & ijazah WASC kepada siswa Anda.
