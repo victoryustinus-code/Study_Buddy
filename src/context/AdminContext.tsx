@@ -1,5 +1,12 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
+interface TierPrice {
+  tier: string;
+  discount: string;
+  schoolioMobyMax: string;
+  ged: string;
+}
+
 interface SiteContent {
   brandName: string;
   tagline: string;
@@ -14,7 +21,16 @@ interface SiteContent {
     mobymax: { name: string; description: string; price: string; priceUnit: string };
     ged: { name: string; description: string; price: string; priceUnit: string };
   };
+  institutionTiers: TierPrice[];
 }
+
+const defaultTiers: TierPrice[] = [
+  { tier: 'Keluarga (1 siswa)', discount: '-', schoolioMobyMax: 'Rp 655.200', ged: 'Rp 1.159.200' },
+  { tier: '20–49 siswa', discount: '10%', schoolioMobyMax: 'Rp 589.700', ged: 'Rp 1.043.300' },
+  { tier: '50–99 siswa', discount: '15%', schoolioMobyMax: 'Rp 556.900', ged: 'Rp 985.300' },
+  { tier: '100–199 siswa', discount: '20%', schoolioMobyMax: 'Rp 524.200', ged: 'Rp 927.400' },
+  { tier: '200+ siswa', discount: '25%', schoolioMobyMax: 'Rp 491.400', ged: 'Rp 869.400' },
+];
 
 const defaultContent: SiteContent = {
   brandName: 'Study Buddy',
@@ -30,6 +46,7 @@ const defaultContent: SiteContent = {
     mobymax: { name: 'MobyMax', description: 'Persiapan akademik bertaraf internasional', price: 'IDR 655.200', priceUnit: '/bulan/siswa' },
     ged: { name: 'GED', description: 'Ijazah SMA setara yang diterima kampus dunia', price: 'IDR 1.159.200', priceUnit: '/bulan/siswa' },
   },
+  institutionTiers: defaultTiers,
 };
 
 interface AdminContextType {
@@ -47,7 +64,16 @@ export function AdminProvider({ children }: { children: ReactNode }) {
   const [content, setContent] = useState<SiteContent>(() => {
     try {
       const saved = localStorage.getItem('siteContent');
-      return saved ? JSON.parse(saved) : defaultContent;
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        // Merge with defaults to ensure new fields exist
+        return {
+          ...defaultContent,
+          ...parsed,
+          institutionTiers: parsed.institutionTiers || defaultTiers,
+        };
+      }
+      return defaultContent;
     } catch {
       return defaultContent;
     }

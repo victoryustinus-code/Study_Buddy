@@ -69,23 +69,50 @@ export default function MobyMaxSchoolPage() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Harga untuk Sekolah & Lembaga</h2>
-          <div className="max-w-md mx-auto">
-            <div className="bg-white rounded-2xl shadow-lg border-2 border-blue-500 overflow-hidden">
-              <div className="bg-blue-500 text-white p-4 text-center">
-                <p className="font-bold text-lg">{content.products.mobymax.name}</p>
-                <p className="text-blue-100 text-sm">Platform Pembelajaran (Adaptive Learning)</p>
-              </div>
-              <div className="p-6">
-                <p className="text-3xl font-bold text-gray-900 mb-1">{content.products.mobymax.price}<span className="text-sm font-normal text-gray-500">{content.products.mobymax.priceUnit}</span></p>
-                <ul className="space-y-2 text-sm text-gray-600 mb-6">
-                  <li>✓ All 60+ curriculum modules</li>
-                  <li>✓ Full assessment suite</li>
-                  <li>✓ Admin dashboard</li>
-                  <li>✓ 360° reporting</li>
-                  <li className="text-green-600 font-bold">✓ GRATIS TEFL Training untuk guru</li>
-                </ul>
-                <a href={`https://wa.me/${content.whatsapp}`} target="_blank" rel="noopener noreferrer" className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-bold hover:bg-blue-700 transition">💬 Hubungi Kami via WhatsApp</a>
-              </div>
+          <p className="text-center text-gray-600 mb-8">Harga khusus berdasarkan jumlah siswa</p>
+          
+          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div className="bg-blue-500 text-white p-4 text-center">
+              <p className="font-bold text-lg">{content.products.mobymax.name} - Harga Lembaga</p>
+              <p className="text-blue-100 text-sm">Platform Pembelajaran (Adaptive Learning)</p>
+            </div>
+            
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="bg-gray-50 border-b">
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-700">Tier Siswa</th>
+                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-700">Diskon</th>
+                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-700">Harga per Siswa/Bulan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {content.institutionTiers.map((tier, index) => (
+                    <tr key={index} className="border-b hover:bg-gray-50">
+                      <td className="px-6 py-4 text-sm text-gray-900 font-medium">{tier.tier}</td>
+                      <td className="px-6 py-4 text-center">
+                        {tier.discount !== '-' ? (
+                          <span className="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">{tier.discount}</span>
+                        ) : (
+                          <span className="text-gray-400">-</span>
+                        )}
+                      </td>
+                      <td className="px-6 py-4 text-center text-sm font-bold text-gray-900">{tier.schoolioMobyMax}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            
+            <div className="p-6 bg-gray-50 border-t">
+              <ul className="space-y-2 text-sm text-gray-600 mb-6">
+                <li>✓ All 60+ curriculum modules</li>
+                <li>✓ Full assessment suite</li>
+                <li>✓ Admin dashboard</li>
+                <li>✓ 360° reporting</li>
+                <li className="text-green-600 font-bold">✓ GRATIS TEFL Training untuk guru</li>
+              </ul>
+              <a href={`https://wa.me/${content.whatsapp}`} target="_blank" rel="noopener noreferrer" className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-bold hover:bg-blue-700 transition">💬 Hubungi Kami untuk Penawaran</a>
             </div>
           </div>
         </div>

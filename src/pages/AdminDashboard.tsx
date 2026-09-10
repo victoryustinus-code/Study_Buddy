@@ -55,7 +55,8 @@ export default function AdminDashboard() {
             <nav className="bg-white rounded-xl shadow-sm p-4 space-y-2">
               <button onClick={() => setActiveTab('general')} className={`w-full text-left px-4 py-3 rounded-lg transition ${activeTab === 'general' ? 'bg-blue-50 text-blue-600 font-semibold' : 'text-gray-600 hover:bg-gray-50'}`}>🏠 Umum & Brand</button>
               <button onClick={() => setActiveTab('hero')} className={`w-full text-left px-4 py-3 rounded-lg transition ${activeTab === 'hero' ? 'bg-blue-50 text-blue-600 font-semibold' : 'text-gray-600 hover:bg-gray-50'}`}>🎯 Hero Section</button>
-              <button onClick={() => setActiveTab('products')} className={`w-full text-left px-4 py-3 rounded-lg transition ${activeTab === 'products' ? 'bg-blue-50 text-blue-600 font-semibold' : 'text-gray-600 hover:bg-gray-50'}`}>📦 Produk & Harga</button>
+              <button onClick={() => setActiveTab('products')} className={`w-full text-left px-4 py-3 rounded-lg transition ${activeTab === 'products' ? 'bg-blue-50 text-blue-600 font-semibold' : 'text-gray-600 hover:bg-gray-50'}`}>📦 Produk & Harga Keluarga</button>
+              <button onClick={() => setActiveTab('tiers')} className={`w-full text-left px-4 py-3 rounded-lg transition ${activeTab === 'tiers' ? 'bg-blue-50 text-blue-600 font-semibold' : 'text-gray-600 hover:bg-gray-50'}`}>🏢 Harga Lembaga</button>
               <button onClick={() => setActiveTab('contact')} className={`w-full text-left px-4 py-3 rounded-lg transition ${activeTab === 'contact' ? 'bg-blue-50 text-blue-600 font-semibold' : 'text-gray-600 hover:bg-gray-50'}`}>📞 Kontak & Alamat</button>
               <button onClick={() => setActiveTab('settings')} className={`w-full text-left px-4 py-3 rounded-lg transition ${activeTab === 'settings' ? 'bg-blue-50 text-blue-600 font-semibold' : 'text-gray-600 hover:bg-gray-50'}`}>⚙️ Pengaturan</button>
             </nav>
@@ -172,6 +173,81 @@ export default function AdminDashboard() {
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+              )}
+
+              {activeTab === 'tiers' && (
+                <div className="space-y-6">
+                  <h2 className="text-2xl font-bold text-gray-800 mb-4">Harga Lembaga (Tiered Pricing)</h2>
+                  <p className="text-sm text-gray-600 mb-6">Atur harga berdasarkan jumlah siswa untuk Schoolio, MobyMax, dan GED</p>
+                  
+                  {content.institutionTiers.map((tier, index) => (
+                    <div key={index} className="border border-gray-200 rounded-lg p-4">
+                      <h3 className="font-semibold text-gray-800 mb-3">Tier {index + 1}: {tier.tier}</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div>
+                          <label className="block text-sm text-gray-600 mb-1">Nama Tier</label>
+                          <input 
+                            type="text" 
+                            value={tier.tier} 
+                            onChange={(e) => {
+                              const newTiers = [...content.institutionTiers];
+                              newTiers[index] = { ...newTiers[index], tier: e.target.value };
+                              updateContent({ institutionTiers: newTiers });
+                            }}
+                            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" 
+                            onBlur={handleSave}
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-sm text-gray-600 mb-1">Diskon</label>
+                          <input 
+                            type="text" 
+                            value={tier.discount} 
+                            onChange={(e) => {
+                              const newTiers = [...content.institutionTiers];
+                              newTiers[index] = { ...newTiers[index], discount: e.target.value };
+                              updateContent({ institutionTiers: newTiers });
+                            }}
+                            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" 
+                            onBlur={handleSave}
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-sm text-gray-600 mb-1">Harga Schoolio & MobyMax</label>
+                          <input 
+                            type="text" 
+                            value={tier.schoolioMobyMax} 
+                            onChange={(e) => {
+                              const newTiers = [...content.institutionTiers];
+                              newTiers[index] = { ...newTiers[index], schoolioMobyMax: e.target.value };
+                              updateContent({ institutionTiers: newTiers });
+                            }}
+                            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" 
+                            onBlur={handleSave}
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-sm text-gray-600 mb-1">Harga GED</label>
+                          <input 
+                            type="text" 
+                            value={tier.ged} 
+                            onChange={(e) => {
+                              const newTiers = [...content.institutionTiers];
+                              newTiers[index] = { ...newTiers[index], ged: e.target.value };
+                              updateContent({ institutionTiers: newTiers });
+                            }}
+                            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" 
+                            onBlur={handleSave}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                  
+                  <div className="p-4 bg-blue-50 rounded-lg">
+                    <p className="text-sm text-blue-800">💡 Harga lembaga akan ditampilkan dalam bentuk tabel di halaman sekolah/lembaga masing-masing produk.</p>
                   </div>
                 </div>
               )}

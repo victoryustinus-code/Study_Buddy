@@ -71,23 +71,50 @@ export default function SchoolioSchoolPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Harga untuk Sekolah & Lembaga</h2>
-          <div className="max-w-md mx-auto">
-            <div className="bg-white rounded-2xl shadow-lg border-2 border-green-500 overflow-hidden">
-              <div className="bg-green-500 text-white p-4 text-center">
-                <p className="font-bold text-lg">{content.products.schoolio.name}</p>
-                <p className="text-green-100 text-sm">Platform Pembelajaran (Kurikulum Kanada, K–8)</p>
-              </div>
-              <div className="p-6">
-                <p className="text-3xl font-bold text-gray-900 mb-1">{content.products.schoolio.price}<span className="text-sm font-normal text-gray-500">{content.products.schoolio.priceUnit}</span></p>
-                <ul className="space-y-2 text-sm text-gray-600 mb-6">
-                  <li>✓ Full curriculum K-8</li>
-                  <li>✓ Admin dashboard</li>
-                  <li>✓ Teacher management tools</li>
-                  <li>✓ Transkrip & rapor internasional</li>
-                  <li className="text-green-600 font-bold">✓ GRATIS TEFL Training untuk guru</li>
-                </ul>
-                <a href={`https://wa.me/${content.whatsapp}`} target="_blank" rel="noopener noreferrer" className="block w-full bg-green-600 text-white text-center py-3 rounded-lg font-bold hover:bg-green-700 transition">💬 Hubungi Kami via WhatsApp</a>
-              </div>
+          <p className="text-center text-gray-600 mb-8">Harga khusus berdasarkan jumlah siswa</p>
+          
+          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div className="bg-green-500 text-white p-4 text-center">
+              <p className="font-bold text-lg">{content.products.schoolio.name} - Harga Lembaga</p>
+              <p className="text-green-100 text-sm">Platform Pembelajaran (Kurikulum Kanada, K–8)</p>
+            </div>
+            
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="bg-gray-50 border-b">
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-700">Tier Siswa</th>
+                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-700">Diskon</th>
+                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-700">Harga per Siswa/Bulan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {content.institutionTiers.map((tier, index) => (
+                    <tr key={index} className="border-b hover:bg-gray-50">
+                      <td className="px-6 py-4 text-sm text-gray-900 font-medium">{tier.tier}</td>
+                      <td className="px-6 py-4 text-center">
+                        {tier.discount !== '-' ? (
+                          <span className="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">{tier.discount}</span>
+                        ) : (
+                          <span className="text-gray-400">-</span>
+                        )}
+                      </td>
+                      <td className="px-6 py-4 text-center text-sm font-bold text-gray-900">{tier.schoolioMobyMax}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            
+            <div className="p-6 bg-gray-50 border-t">
+              <ul className="space-y-2 text-sm text-gray-600 mb-6">
+                <li>✓ Full curriculum K-8</li>
+                <li>✓ Admin dashboard</li>
+                <li>✓ Teacher management tools</li>
+                <li>✓ Transkrip & rapor internasional</li>
+                <li className="text-green-600 font-bold">✓ GRATIS TEFL Training untuk guru</li>
+              </ul>
+              <a href={`https://wa.me/${content.whatsapp}`} target="_blank" rel="noopener noreferrer" className="block w-full bg-green-600 text-white text-center py-3 rounded-lg font-bold hover:bg-green-700 transition">💬 Hubungi Kami untuk Penawaran</a>
             </div>
           </div>
         </div>
