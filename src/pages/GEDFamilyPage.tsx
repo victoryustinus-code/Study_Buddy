@@ -1,0 +1,179 @@
+import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import Logo from '../components/Logo';
+import { useAdmin } from '../context/AdminContext';
+
+export default function GEDFamilyPage() {
+  const { content } = useAdmin();
+
+  return (
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      <section className="bg-gradient-to-br from-orange-500 to-red-700 text-white py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <div className="flex items-center gap-3 mb-4">
+              <Logo brand="ged" size="large" />
+              <span className="inline-block bg-white/20 rounded-full px-4 py-1 text-sm">🏠 Untuk Keluarga / Homeschool</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-extrabold mb-4">{content.products.ged.name} untuk Keluarga</h1>
+            <p className="text-xl text-orange-100 mb-6">Ijazah setara SMA yang diterima di 98% universitas dan perusahaan di seluruh dunia. Persiapan tes internasional untuk kelas 9-12.</p>
+            <div className="flex flex-wrap gap-3">
+              <a href={`https://wa.me/${content.whatsapp}`} target="_blank" rel="noopener noreferrer" className="bg-yellow-400 text-gray-900 px-6 py-3 rounded-xl font-bold hover:bg-yellow-300 transition">💬 Daftar Sekarang →</a>
+              <a href="https://www.essentialed.com/educators/ged-academy" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-6 py-3 rounded-xl font-bold hover:bg-white hover:text-orange-700 transition">Kunjungi GED Academy</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Apa itu {content.products.ged.name}?</h2>
+          <div className="max-w-3xl mx-auto">
+            <p className="text-gray-600 text-lg mb-6"><strong>{content.products.ged.name}</strong> adalah tes yang mengukur pengetahuan setingkat sekolah menengah atas (SMA). Lulus tes {content.products.ged.name} berarti Anda mendapatkan kredensial setara diploma SMA yang diakui secara internasional.</p>
+            <div className="bg-orange-50 rounded-xl p-6 border border-orange-200">
+              <p className="font-bold text-orange-800 mb-2">🎓 Alur Belajar Lengkap via {content.brandName}:</p>
+              <div className="flex flex-wrap items-center gap-2 text-sm">
+                <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full font-medium">Schoolio (PAUD-8)</span>
+                <span className="text-gray-400">→</span>
+                <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium">MobyMax (K-8)</span>
+                <span className="text-gray-400">→</span>
+                <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full font-medium">{content.products.ged.name} (9-12)</span>
+                <span className="text-gray-400">→</span>
+                <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full font-medium">🎓 Universitas Dunia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Lihat {content.products.ged.name} Beraksi</h2>
+          <div className="max-w-4xl mx-auto">
+            <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-2xl shadow-xl">
+              <iframe 
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/cSrSJeSClvA"
+                title="GED Overview"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">4 Subjek Tes {content.products.ged.name}</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white rounded-xl p-6 shadow-sm text-center"><span className="text-4xl mb-3 block">🔢</span><h3 className="font-bold text-gray-900 mb-2">Mathematical Reasoning</h3><p className="text-sm text-gray-600">115 menit. Aljabar, geometri, statistika.</p></div>
+            <div className="bg-white rounded-xl p-6 shadow-sm text-center"><span className="text-4xl mb-3 block">🔬</span><h3 className="font-bold text-gray-900 mb-2">Science</h3><p className="text-sm text-gray-600">90 menit. Life, physical, earth science.</p></div>
+            <div className="bg-white rounded-xl p-6 shadow-sm text-center"><span className="text-4xl mb-3 block">🌍</span><h3 className="font-bold text-gray-900 mb-2">Social Studies</h3><p className="text-sm text-gray-600">70 menit. History, civics, economics.</p></div>
+            <div className="bg-white rounded-xl p-6 shadow-sm text-center"><span className="text-4xl mb-3 block">📝</span><h3 className="font-bold text-gray-900 mb-2">Language Arts</h3><p className="text-sm text-gray-600">150 menit. Reading, writing, essay.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Harga Program {content.products.ged.name}</h2>
+          <div className="max-w-md mx-auto">
+            <div className="bg-white rounded-2xl shadow-lg border-2 border-orange-500 overflow-hidden">
+              <div className="bg-orange-500 text-white p-4 text-center">
+                <p className="font-bold text-lg">{content.products.ged.name}</p>
+                <p className="text-orange-100 text-sm">Program Persiapan Pendidikan / {content.products.ged.name}</p>
+              </div>
+              <div className="p-6">
+                <p className="text-3xl font-bold text-gray-900 mb-1">{content.products.ged.price}<span className="text-sm font-normal text-gray-500">{content.products.ged.priceUnit}</span></p>
+                <ul className="space-y-2 text-sm text-gray-600 mb-6">
+                  <li>✓ Program persiapan 4 subjek</li>
+                  <li>✓ Study materials & practice tests</li>
+                  <li>✓ AI tutor feedback</li>
+                  <li>✓ Official transcript & diploma</li>
+                  <li>✓ Diterima 98% universitas dunia</li>
+                </ul>
+                <a href={`https://wa.me/${content.whatsapp}`} target="_blank" rel="noopener noreferrer" className="block w-full bg-orange-600 text-white text-center py-3 rounded-lg font-bold hover:bg-orange-700 transition">💬 Hubungi Kami via WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div className="mt-16 bg-orange-50 rounded-2xl p-8 max-w-3xl mx-auto">
+            <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">💡 Bandingkan dengan Biaya SMA Internasional</h3>
+            <div className="grid grid-cols-2 gap-4 text-center">
+              <div className="bg-white rounded-lg p-4"><p className="text-sm text-gray-500">SMA Internasional (4 tahun)</p><p className="text-2xl font-bold text-red-600">Rp 600 jt - 2 M</p></div>
+              <div className="bg-white rounded-lg p-4"><p className="text-sm text-gray-500">{content.products.ged.name} via {content.brandName}</p><p className="text-2xl font-bold text-green-600">{content.products.ged.price}/bulan</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimoni Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Apa Kata Mereka?</h2>
+          <p className="text-center text-gray-600 mb-12">Testimoni dari lulusan {content.products.ged.name} yang sukses</p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">👨‍🎓</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Rian Pratama</p>
+                  <p className="text-sm text-gray-500">Lulusan GED 2023</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"Berkat GED, saya bisa kuliah di universitas top di Australia. Ijazahnya diakui di mana-mana. Best decision ever!"</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">👩‍🎓</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Maya Angelina</p>
+                  <p className="text-sm text-gray-500">Mahasiswi di Singapura</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"Persiapan GED-nya sangat terstruktur. Materinya lengkap dan practice test-nya mirip dengan tes asli. Lulus dengan skor tinggi!"</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">👨</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Bapak Hendra</p>
+                  <p className="text-sm text-gray-500">Orang Tua</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"Anak saya tidak bisa lanjut SMA karena masalah finansial. Dengan GED, dia bisa dapat ijazah setara dan sekarang kerja di perusahaan multinasional."</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-orange-600 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold mb-4">Raih Ijazah Setara SMA yang Diakui Dunia</h2>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href={`https://wa.me/${content.whatsapp}`} target="_blank" rel="noopener noreferrer" className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-300 transition">💬 Hubungi via WhatsApp →</a>
+            <Link to="/ged/school" className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-orange-700 transition">Lihat Versi Sekolah →</Link>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+}
