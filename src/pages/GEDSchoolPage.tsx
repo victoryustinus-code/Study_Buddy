@@ -41,6 +41,25 @@ export default function GEDSchoolPage() {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Lihat {content.products.ged.name} Beraksi</h2>
+          <div className="max-w-4xl mx-auto">
+            <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-2xl shadow-xl">
+              <iframe 
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/cSrSJeSClvA"
+                title="GED Overview"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8 md:p-12 border border-green-200">
@@ -113,6 +132,58 @@ export default function GEDSchoolPage() {
                 <li className="text-green-600 font-bold">✓ GRATIS TEFL Training untuk guru</li>
               </ul>
               <a href={`https://wa.me/${content.whatsapp}`} target="_blank" rel="noopener noreferrer" className="block w-full bg-orange-600 text-white text-center py-3 rounded-lg font-bold hover:bg-orange-700 transition">💬 Hubungi Kami untuk Penawaran</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimoni Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Testimoni dari Lembaga Mitra</h2>
+          <p className="text-center text-gray-600 mb-12">Apa kata sekolah dan lembaga yang sudah menawarkan program {content.products.ged.name}</p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">🏫</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">SMA Plus PGRI</p>
+                  <p className="text-sm text-gray-500">Tangerang</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"Program GED membantu siswa kami yang ingin kuliah di luar negeri. Banyak yang berhasil masuk universitas top di AS dan Australia."</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">📚</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Kursus Persiapan Kuliah Global</p>
+                  <p className="text-sm text-gray-500">Jakarta</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"Materi persiapan GED-nya sangat komprehensif. Siswa kami punya tingkat kelulusan 95%. Sangat recommended untuk lembaga kursus."</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">🎓</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">PKBM Karya Mandiri</p>
+                  <p className="text-sm text-gray-500">Medan</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"Banyak siswa kami yang tidak bisa lanjut SMA karena berbagai alasan. Program GED memberikan mereka kesempatan kedua untuk meraih masa depan."</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
             </div>
           </div>
         </div>

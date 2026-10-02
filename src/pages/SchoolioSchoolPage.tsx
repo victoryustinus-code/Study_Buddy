@@ -41,6 +41,25 @@ export default function SchoolioSchoolPage() {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Lihat {content.products.schoolio.name} Beraksi</h2>
+          <div className="max-w-4xl mx-auto">
+            <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-2xl shadow-xl">
+              <iframe 
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/wbfLBEyMQYI"
+                title="Schoolio Overview"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 bg-green-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
@@ -115,6 +134,58 @@ export default function SchoolioSchoolPage() {
                 <li className="text-green-600 font-bold">✓ GRATIS TEFL Training untuk guru</li>
               </ul>
               <a href={`https://wa.me/${content.whatsapp}`} target="_blank" rel="noopener noreferrer" className="block w-full bg-green-600 text-white text-center py-3 rounded-lg font-bold hover:bg-green-700 transition">💬 Hubungi Kami untuk Penawaran</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimoni Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Testimoni dari Lembaga Mitra</h2>
+          <p className="text-center text-gray-600 mb-12">Apa kata sekolah dan lembaga yang sudah menggunakan {content.products.schoolio.name}</p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">🏫</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">SD Islam Terpadu Al-Hikmah</p>
+                  <p className="text-sm text-gray-500">Jakarta Selatan</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"Kurikulum Schoolio sangat membantu kami dalam menawarkan program internasional tanpa biaya tinggi. Siswa kami sekarang punya transkrip yang diakui."</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">📚</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">PKBM Cendekia Mandiri</p>
+                  <p className="text-sm text-gray-500">Bandung</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"Dashboard monitoring-nya sangat membantu kami memantau progress ratusan siswa. TEFL training untuk guru juga sangat bermanfaat."</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">🎓</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Homeschool Community Bali</p>
+                  <p className="text-sm text-gray-500">Denpasar</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"Fitur neurodivergent-friendly sangat membantu siswa kami yang memiliki kebutuhan khusus. Support dari Study Buddy juga sangat responsif."</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
             </div>
           </div>
         </div>

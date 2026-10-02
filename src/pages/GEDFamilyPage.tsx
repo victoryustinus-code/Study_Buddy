@@ -48,6 +48,25 @@ export default function GEDFamilyPage() {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Lihat {content.products.ged.name} Beraksi</h2>
+          <div className="max-w-4xl mx-auto">
+            <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-2xl shadow-xl">
+              <iframe 
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/cSrSJeSClvA"
+                title="GED Overview"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">4 Subjek Tes {content.products.ged.name}</h2>
@@ -87,6 +106,58 @@ export default function GEDFamilyPage() {
             <div className="grid grid-cols-2 gap-4 text-center">
               <div className="bg-white rounded-lg p-4"><p className="text-sm text-gray-500">SMA Internasional (4 tahun)</p><p className="text-2xl font-bold text-red-600">Rp 600 jt - 2 M</p></div>
               <div className="bg-white rounded-lg p-4"><p className="text-sm text-gray-500">{content.products.ged.name} via {content.brandName}</p><p className="text-2xl font-bold text-green-600">{content.products.ged.price}/bulan</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimoni Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Apa Kata Mereka?</h2>
+          <p className="text-center text-gray-600 mb-12">Testimoni dari lulusan {content.products.ged.name} yang sukses</p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">👨‍🎓</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Rian Pratama</p>
+                  <p className="text-sm text-gray-500">Lulusan GED 2023</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"Berkat GED, saya bisa kuliah di universitas top di Australia. Ijazahnya diakui di mana-mana. Best decision ever!"</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">👩‍🎓</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Maya Angelina</p>
+                  <p className="text-sm text-gray-500">Mahasiswi di Singapura</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"Persiapan GED-nya sangat terstruktur. Materinya lengkap dan practice test-nya mirip dengan tes asli. Lulus dengan skor tinggi!"</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">👨</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Bapak Hendra</p>
+                  <p className="text-sm text-gray-500">Orang Tua</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"Anak saya tidak bisa lanjut SMA karena masalah finansial. Dengan GED, dia bisa dapat ijazah setara dan sekarang kerja di perusahaan multinasional."</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
             </div>
           </div>
         </div>

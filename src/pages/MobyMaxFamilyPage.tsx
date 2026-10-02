@@ -41,6 +41,23 @@ export default function MobyMaxFamilyPage() {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Lihat {content.products.mobymax.name} Beraksi</h2>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl p-8 text-white text-center">
+              <span className="text-6xl block mb-4">🎥</span>
+              <h3 className="text-2xl font-bold mb-4">Success Stories & Demo Videos</h3>
+              <p className="text-blue-100 mb-6">Lihat bagaimana MobyMax membantu jutaan siswa di seluruh dunia mencapai kesuksesan akademik</p>
+              <a href="https://www.mobymax.com/success-videos" target="_blank" rel="noopener noreferrer" className="inline-block bg-yellow-400 text-gray-900 px-8 py-3 rounded-xl font-bold hover:bg-yellow-300 transition">
+                Tonton Video Sukses →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Harga untuk Keluarga</h2>
@@ -68,6 +85,58 @@ export default function MobyMaxFamilyPage() {
             <div className="grid grid-cols-2 gap-4 text-center">
               <div className="bg-white rounded-lg p-4"><p className="text-sm text-gray-500">Sekolah Internasional</p><p className="text-2xl font-bold text-red-600">Rp 150-500 jt/th</p></div>
               <div className="bg-white rounded-lg p-4"><p className="text-sm text-gray-500">{content.products.mobymax.name} via {content.brandName}</p><p className="text-2xl font-bold text-green-600">{content.products.mobymax.price}/bulan</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimoni Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Apa Kata Mereka?</h2>
+          <p className="text-center text-gray-600 mb-12">Testimoni dari orang tua yang menggunakan {content.products.mobymax.name}</p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-blue-50 rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">👩</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Ibu Ratna</p>
+                  <p className="text-sm text-gray-500">Orang Tua Siswa SD</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"Anak saya yang tadinya kesulitan math, sekarang jadi suka belajar. Adaptive learning-nya benar-benar menyesuaikan kemampuan anak."</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div className="bg-blue-50 rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">👨</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Bapak Budi</p>
+                  <p className="text-sm text-gray-500">Ayah Homeschooler</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"Report progress-nya sangat detail. Saya bisa lihat dengan jelas di mana anak saya perlu bantuan. Worth every rupiah!"</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div className="bg-blue-50 rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">👩</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Ibu Dewi</p>
+                  <p className="text-sm text-gray-500">Orang Tua 2 Anak</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"Kedua anak saya pakai MobyMax dan progress mereka signifikan. Gamification-nya membuat mereka semangat belajar setiap hari."</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
             </div>
           </div>
         </div>

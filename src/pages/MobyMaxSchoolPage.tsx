@@ -41,6 +41,23 @@ export default function MobyMaxSchoolPage() {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Lihat {content.products.mobymax.name} Beraksi</h2>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl p-8 text-white text-center">
+              <span className="text-6xl block mb-4">🎥</span>
+              <h3 className="text-2xl font-bold mb-4">Success Stories & Demo Videos</h3>
+              <p className="text-blue-100 mb-6">Lihat bagaimana MobyMax membantu sekolah di seluruh dunia meningkatkan hasil belajar siswa</p>
+              <a href="https://www.mobymax.com/success-videos" target="_blank" rel="noopener noreferrer" className="inline-block bg-yellow-400 text-gray-900 px-8 py-3 rounded-xl font-bold hover:bg-yellow-300 transition">
+                Tonton Video Sukses →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 bg-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8 md:p-12 border border-green-200">
@@ -113,6 +130,58 @@ export default function MobyMaxSchoolPage() {
                 <li className="text-green-600 font-bold">✓ GRATIS TEFL Training untuk guru</li>
               </ul>
               <a href={`https://wa.me/${content.whatsapp}`} target="_blank" rel="noopener noreferrer" className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-bold hover:bg-blue-700 transition">💬 Hubungi Kami untuk Penawaran</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimoni Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Testimoni dari Lembaga Mitra</h2>
+          <p className="text-center text-gray-600 mb-12">Apa kata sekolah dan lembaga yang sudah menggunakan {content.products.mobymax.name}</p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-blue-50 rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">🏫</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">SMP Kristen Penabur</p>
+                  <p className="text-sm text-gray-500">Surabaya</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"MobyMax membantu kami mengidentifikasi learning gap siswa dengan cepat. Hasilnya, nilai rata-rata siswa meningkat 30% dalam 6 bulan."</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div className="bg-blue-50 rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">📚</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Kursus Bahasa Inggris CEF</p>
+                  <p className="text-sm text-gray-500">Yogyakarta</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"Fitur differentiated learning-nya sangat membantu siswa kami yang memiliki level berbeda dalam satu kelas. Guru bisa fokus pada yang butuh bantuan."</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div className="bg-blue-50 rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">🎓</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">SD Islam Al-Azhar</p>
+                  <p className="text-sm text-gray-500">Semarang</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"Dashboard reporting-nya sangat membantu kami dalam meeting dengan orang tua. Mereka bisa lihat progress anak secara real-time."</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
             </div>
           </div>
         </div>

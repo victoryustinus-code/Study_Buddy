@@ -10,6 +10,8 @@ export default function SchoolioFamilyPage() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
+      
+      {/* Hero Section */}
       <section className="bg-gradient-to-br from-green-500 to-emerald-700 text-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
@@ -27,24 +29,85 @@ export default function SchoolioFamilyPage() {
         </div>
       </section>
 
+      {/* Features */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Mengapa {content.products.schoolio.name} Cocok untuk Keluarga Anda?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-green-50 rounded-xl p-6"><span className="text-3xl mb-3 block">🧩</span><h3 className="font-bold text-gray-900 mb-2">Neurodivergent-Friendly</h3><p className="text-sm text-gray-600">Dirancang khusus untuk anak ADHD, Autisme, dan gaya belajar berbeda.</p></div>
-            <div className="bg-green-50 rounded-xl p-6"><span className="text-3xl mb-3 block">📚</span><h3 className="font-bold text-gray-900 mb-2">Online & Offline</h3><p className="text-sm text-gray-600">Belajar online dengan video & kuis, atau cetak aktivitas offline.</p></div>
-            <div className="bg-green-50 rounded-xl p-6"><span className="text-3xl mb-3 block">🎓</span><h3 className="font-bold text-gray-900 mb-2">Terakreditasi WASC</h3><p className="text-sm text-gray-600">Accrediting Commission for Schools, Western Association of Schools and Colleges.</p></div>
-            <div className="bg-green-50 rounded-xl p-6"><span className="text-3xl mb-3 block">📊</span><h3 className="font-bold text-gray-900 mb-2">Dashboard Progress</h3><p className="text-sm text-gray-600">Pantau perkembangan anak, download transkrip kapan saja.</p></div>
-            <div className="bg-green-50 rounded-xl p-6"><span className="text-3xl mb-3 block">🚀</span><h3 className="font-bold text-gray-900 mb-2">Future Readiness</h3><p className="text-sm text-gray-600">Financial Literacy, Emotional Intelligence, Entrepreneurship.</p></div>
-            <div className="bg-green-50 rounded-xl p-6"><span className="text-3xl mb-3 block">🤝</span><h3 className="font-bold text-gray-900 mb-2">Support Orang Tua</h3><p className="text-sm text-gray-600">Weekly live office hours, 1-on-1 teacher booking, dan komunitas.</p></div>
+            <div className="bg-green-50 rounded-xl p-6">
+              <span className="text-3xl mb-3 block">🧩</span>
+              <h3 className="font-bold text-gray-900 mb-2">Neurodivergent-Friendly</h3>
+              <p className="text-sm text-gray-600">Dirancang khusus untuk anak ADHD, Autisme, dan gaya belajar berbeda.</p>
+            </div>
+            <div className="bg-green-50 rounded-xl p-6">
+              <span className="text-3xl mb-3 block">📚</span>
+              <h3 className="font-bold text-gray-900 mb-2">Online & Offline</h3>
+              <p className="text-sm text-gray-600">Belajar online dengan video & kuis, atau cetak aktivitas offline.</p>
+            </div>
+            <div className="bg-green-50 rounded-xl p-6">
+              <span className="text-3xl mb-3 block">🎓</span>
+              <h3 className="font-bold text-gray-900 mb-2">Terakreditasi WASC</h3>
+              <p className="text-sm text-gray-600">Accrediting Commission for Schools, Western Association of Schools and Colleges.</p>
+            </div>
+            <div className="bg-green-50 rounded-xl p-6">
+              <span className="text-3xl mb-3 block">📊</span>
+              <h3 className="font-bold text-gray-900 mb-2">Dashboard Progress</h3>
+              <p className="text-sm text-gray-600">Pantau perkembangan anak, download transkrip kapan saja.</p>
+            </div>
+            <div className="bg-green-50 rounded-xl p-6">
+              <span className="text-3xl mb-3 block">🚀</span>
+              <h3 className="font-bold text-gray-900 mb-2">Future Readiness</h3>
+              <p className="text-sm text-gray-600">Financial Literacy, Emotional Intelligence, Entrepreneurship.</p>
+            </div>
+            <div className="bg-green-50 rounded-xl p-6">
+              <span className="text-3xl mb-3 block">🤝</span>
+              <h3 className="font-bold text-gray-900 mb-2">Support Orang Tua</h3>
+              <p className="text-sm text-gray-600">Weekly live office hours, 1-on-1 teacher booking, dan komunitas.</p>
+            </div>
           </div>
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Lihat {content.products.schoolio.name} Beraksi</h2>
+          <div className="max-w-4xl mx-auto">
+            <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-2xl shadow-xl">
+              <iframe 
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/wbfLBEyMQYI"
+                title="Schoolio Overview"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Subjects */}
       <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Mata Pelajaran (Grades K-8)</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {['Mathematics', 'English Language Arts', 'Science', 'Social Studies', 'Future Readiness', 'Electives'].map((subject) => (
+              <div key={subject} className="bg-white rounded-lg p-4 text-center shadow-sm">
+                <p className="font-medium text-gray-800 text-sm">{subject}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-gray-500 text-sm mt-4">Mix and match subjects & levels — sesuaikan dengan kebutuhan anak Anda</p>
+        </div>
+      </section>
+
+      {/* Pricing */}
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Harga untuk Keluarga</h2>
           <p className="text-center text-gray-600 mb-12">Hemat hingga 80% dibanding sekolah internasional!</p>
+
           <div className="max-w-md mx-auto">
             <div className="bg-white rounded-2xl shadow-lg border-2 border-green-500 overflow-hidden">
               <div className="bg-green-500 text-white p-4 text-center">
@@ -66,16 +129,106 @@ export default function SchoolioFamilyPage() {
               </div>
             </div>
           </div>
+
+          {/* Cost Comparison */}
           <div className="mt-16 bg-green-50 rounded-2xl p-8 max-w-3xl mx-auto">
             <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">💡 Bandingkan dengan Sekolah Internasional</h3>
             <div className="grid grid-cols-2 gap-4 text-center">
-              <div className="bg-white rounded-lg p-4"><p className="text-sm text-gray-500">Sekolah Internasional</p><p className="text-2xl font-bold text-red-600">Rp 150-500 jt/th</p></div>
-              <div className="bg-white rounded-lg p-4"><p className="text-sm text-gray-500">{content.products.schoolio.name} via {content.brandName}</p><p className="text-2xl font-bold text-green-600">{content.products.schoolio.price}/bulan</p></div>
+              <div className="bg-white rounded-lg p-4">
+                <p className="text-sm text-gray-500">Sekolah Internasional</p>
+                <p className="text-2xl font-bold text-red-600">Rp 150-500 jt/th</p>
+              </div>
+              <div className="bg-white rounded-lg p-4">
+                <p className="text-sm text-gray-500">{content.products.schoolio.name} via {content.brandName}</p>
+                <p className="text-2xl font-bold text-green-600">{content.products.schoolio.price}/bulan</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Testimoni Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Apa Kata Mereka?</h2>
+          <p className="text-center text-gray-600 mb-12">Testimoni dari orang tua dan keluarga yang menggunakan {content.products.schoolio.name}</p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">👩</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Ibu Sarah</p>
+                  <p className="text-sm text-gray-500">Orang Tua Homeschool</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"Anak saya yang ADHD sekarang bisa belajar dengan nyaman. Kurikulumnya fleksibel dan tidak membebani. Sangat recommended!"</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">👨</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Bapak Andi</p>
+                  <p className="text-sm text-gray-500">Ayah 3 Anak</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"Transkrip internasionalnya sangat membantu. Anak saya bisa lanjut ke sekolah internasional dengan mudah. Worth every penny!"</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-2xl">👩</span>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Ibu Linda</p>
+                  <p className="text-sm text-gray-500">Homeschooler</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">"Fitur offline-nya sangat membantu saat kami traveling. Anak tetap bisa belajar tanpa internet. Dashboard progress-nya juga lengkap!"</p>
+              <div className="flex text-yellow-400 mt-3">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Cara Memulai</h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div className="text-center">
+              <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">1</div>
+              <h4 className="font-bold text-gray-900 mb-1">Daftar</h4>
+              <p className="text-sm text-gray-600">Buat akun gratis, mulai 7 hari trial</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">2</div>
+              <h4 className="font-bold text-gray-900 mb-1">Pilih Kursus</h4>
+              <p className="text-sm text-gray-600">Pre-loaded sesuai grade level anak</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">3</div>
+              <h4 className="font-bold text-gray-900 mb-1">Atur Jadwal</h4>
+              <p className="text-sm text-gray-600">Buat jadwal sendiri atau pakai template</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">4</div>
+              <h4 className="font-bold text-gray-900 mb-1">Pantau Progress</h4>
+              <p className="text-sm text-gray-600">Dashboard lengkap & download transkrip</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
       <section className="py-16 bg-green-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Siap Memulai Homeschool dengan {content.products.schoolio.name}?</h2>
